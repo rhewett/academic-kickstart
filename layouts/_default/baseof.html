@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default "en-us" }}">
+
+{{ partial "site_head.html" . }}
+
+<body id="top" data-spy="scroll" data-target="{{ if or .IsHome (eq .Type "widget_page") }}#navbar-main{{else}}#TableOfContents{{end}}" data-offset="71" {{ if not (.Scratch.Get "light") }}class="dark"{{end}}>
+
+  {{ partial "search" . }}
+
+  {{ partial "header_image.html" . }}
+
+  <div class="container main-container">
+
+  {{ partial "navbar.html" . }}
+
+  {{ block "main" . }}{{ end }}
+
+  </div>
+
+  {{ partial "site_js.html" . }}
+
+  <div class="container">
+    {{ partial "site_footer.html" . }}
+  </div>
+
+  {{ partial "citation.html" . }}
+
+</body>
+
+</html>

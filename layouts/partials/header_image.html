@@ -1,0 +1,27 @@
+{{/* Get widget page */}}
+{{ $page := "" }}
+{{ if .IsHome }}
+  {{ $page = "/home" }}
+{{ else }}
+  {{ $page = .File.Path }}
+{{ end }}
+{{ $headless_bundle := site.GetPage $page }}
+
+{{ $header_image := "" }}
+{{ if $headless_bundle.Params.header_image }}
+  {{ $header_image = $headless_bundle.Params.header_image }}
+{{ else }}
+  {{ $header_image = site.Params.custom.header_image}}
+{{ end }}
+
+    <div class="row no-gutters">
+      <div class="col">
+        <style type="text/css">
+        .hero {
+          background-image: url("{{ $header_image }}");
+        }
+        </style>
+
+        <div class="hero"></div>
+      </div>
+    </div>
