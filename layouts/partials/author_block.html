@@ -1,0 +1,18 @@
+{{ $page_path := "" }}
+{{ if .IsHome }}
+  {{ $page_path = "/home" }}
+{{ else }}
+  {{ $page_path = .File.Path }}
+{{ end }}
+{{ $page := site.GetPage $page_path }}
+
+
+<div class="author-avatar">
+  <a href="{{ "/" | relURL }}">
+    <img src="{{ $page.Params.sidebar.image | absURL }}" alt="{{ $page.Params.sidebar.text }}" itemprop="image">
+  </a>
+</div>
+<div class="author-content">
+  <h3 class="author-name" itemprop="name">{{ $page.Params.sidebar.text }}</h3>
+  <p class="author-bio" itemprop="description">{{ $page.Params.sidebar.subtext1 }}</p>
+</div>

@@ -1,0 +1,23 @@
+{{ $page_path := "" }}
+{{ if .IsHome }}
+  {{ $page_path = "/home" }}
+{{ else }}
+  {{ $page_path = .File.Path }}
+{{ end }}
+{{ $page := site.GetPage $page_path }}
+
+  {{ partial "author_block.html" . }}
+  <div class="author-urls-wrapper">
+    <ul class="author-urls social-icons" aria-hidden="true">
+      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
+        <span itemprop="name">{{ $page.Params.sidebar.subtext2 }}</span>
+      </li>
+      {{ range $i, $e := $page.Params.sidebar.links}}
+      <li>
+        <a itemprop="sameAs" href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer">
+          {{ .name }}
+        </a>
+      </li>
+      {{ end }}
+    </ul>  
+  </div>
