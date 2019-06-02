@@ -11,9 +11,39 @@
 
   <div class="container main-container">
 
-  {{ partial "navbar.html" . }}
-
-  {{ block "main" . }}{{ end }}
+    <div class="row no-gutters">
+      <div class="col-10 d-block col-sm-12 d-md-none">
+        <div class="author-top-wrapper">
+          {{ partial "author_block.html" . }}
+        </div>
+      </div>
+      <div class="d-none d-md-block col-md-3 sidebar-width">
+        <!-- Filler block -->
+      </div>
+      <div class="col-2 order-first order-sm-last col-sm-12 col-md">
+        <div class="nav-wrapper">
+          {{ partial "navbar.html" . }}
+        </div>
+      </div>
+    </div>
+    <div class="row no-gutters">
+      <div class="d-none d-md-block col-md-3 sidebar-width">
+        <div class="sidebar sticky" itemprop="author" itemscope itemtype="http://schema.org/Person">
+          {{ partial "sidebar.html" . }}
+        </div>
+      </div>
+      <div class="col">
+        <div class="container-fluid main-wrapper">
+          <article class="page">
+            <div class="page_container">
+              <section class="page_content">
+                {{ block "main" . }}{{ end }}
+              </section>
+            </div>
+          </article>
+        </div>
+      </div>
+    </div>
 
   </div>
 

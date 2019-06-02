@@ -1,52 +1,12 @@
-.nav-link,
-.nav-link a, 
-.nav-link a:active, 
-.nav-link a:hover, 
-.nav-link a:visited{
-  font-family: 'Chakra Petch', sans-serif;
-  font-size: 1.25rem;
-  padding-left: 0.5rem;
-  font-weight: 400!important;
+body{
+  margin-top: 0px;
+  min-width:375px;
+  line-height: 1.5;
 }
 
-.navbar {
-  /*position: sticky;*/
-  position: relative;
-  min-height: 50px!important;
-  height: 50px;
-  box-shadow: none;
-  background: none!important;
-  /*background-color: #2b2b2b!important;*/
-  color: white;
-  top: -50px; 
+html {
+  font-size: 19px;
 }
-
-.main-container {
-  position: relative;
-  width:100%;
-  max-width: 100%;
-  /* Due to author-top-wrapper */
-  padding: 0px;
-}
-
-/* Extra small devices (landscape phones, under 576px) */
-
-/* Small devices (landscape phones, 576px and up) */
-  @media (min-width: 576px) {
-  }
-
-  /* Medium devices (tablets, 768px and up) */
-  @media (min-width: 768px) {
-  }
-
-  /* Large devices (desktops, 992px and up) */
-  @media (min-width: 992px) {
-  }
-
-  /* Extra large devices (large desktops, 1200px and up) */
-  @media (min-width: 1200px) {
-  }
-
 
 .hero {
   position: relative;
@@ -60,12 +20,267 @@
   background-size: cover;
 }
 
-body {
-  margin-top: 0px;
+.sidebar-width{
+  min-width: 205px;
+  max-width: 250px;
 }
 
-@media screen and (max-width: 1200px) { /* Match max-width of .nav-bar query. */
-  body {
-    margin-top: 0px;
-  }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  /*font-weight: bold;*/
+  line-height: 1.25;
+
+  /*margin: 2em 0 .5em;*/
 }
+h1 {
+  font-size: 1.563em;
+
+  margin-top: 0;
+}
+h1 a {
+  text-decoration: none;
+}
+h2 {
+  font-size: 1.25em;
+}
+h3 {
+  font-size: 1em;
+}
+h4 {
+  font-size: .75em;
+}
+h5 {
+  font-size: .75em;
+}
+h6 {
+  font-size: .75em;
+}
+small, .small {
+  font-size: .75em;
+}
+p {
+  margin-bottom: 1.3em;
+}
+
+
+/* Extra small devices (landscape phones, under 576px) */
+    .main-container {
+      position: relative;
+      top: -75px; /* Due to author-top-wrapper */
+      padding: 0px;
+    }
+
+    .nav-wrapper{
+      position: relative;
+      width: 100vw;
+    }
+
+    .navbar {
+      color: #fff;
+      padding: 0px;
+      /* Flush the navbar to the bottom of the wrapper.*/
+      box-shadow: none;
+      background: none;
+      position: relative;
+      /*position: static;*/
+      /*bottom: 0;*/
+      min-height: 0px;
+    }
+
+    .navbar-toggler{
+      height: 75px;
+    }
+
+    .show{
+      position: relative;
+      top: 0px;
+      padding-right: 100vw;
+    }
+
+    .navbar-collapse{
+      background-color: dimgrey;
+    }
+
+    .navbar-light .navbar-nav>.nav-item>.nav-link,
+    .navbar-light .navbar-nav>.nav-item>.nav-link a,
+    .navbar-light .navbar-nav>.nav-item>.nav-link a:active,
+    .navbar-light .navbar-nav>.nav-item>.nav-link a:hover,
+    .navbar-light .navbar-nav>.nav-item>.nav-link a:visited{
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 1.35rem;
+      padding-left: 0.5rem;
+      font-weight: 400;
+      color: white;
+      padding-top: 5px;
+      padding-bottom: 5px;
+      line-height: inherit;
+    }
+
+    .navbar-light .navbar-nav>li.nav-item>a.active,
+    .navbar-light .navbar-nav>li.nav-item>a.active:focus,
+    .navbar-light .navbar-nav>li.nav-item>a.active:hover {
+      font-family: 'Chakra Petch', sans-serif;
+      font-size: 1.35rem;
+      font-weight: 400;
+      color: white;
+    }
+
+    .nav-separator{
+      display: none;
+    }
+
+    .nav-hamburger {
+      font-size: 2.0rem;
+      color: white;
+    }
+
+    .author-top-wrapper{
+      height: 75px; /* contributes to main container shift */
+      display: flex;
+    }
+
+    .author-avatar {
+      width: 75px;
+      height: 75px;
+      vertical-align: middle;
+    }
+
+    .author-avatar img {
+      max-width: 70px;
+      border-radius: 50%;
+    }
+
+    .author-content {
+      padding-left: 15px;
+      vertical-align: middle;
+      color: white;
+    }
+
+    .author-content>h3 {
+      font-weight: 400;
+      color: inherit;
+    }
+
+    .author-content a {
+      color: inherit;
+    }
+
+    .author-name {
+      margin: 0;
+      font-family: "Roboto", sans-serif;
+      font-size: 1.4rem;
+    }
+
+    .author-bio {
+      font-family: 'Chakra Petch', sans-serif;
+      margin: 0;
+      font-size: 0.9rem;
+    }
+
+    .main-wrapper{
+      background-color: white;
+      padding-left: 15px;
+    }
+
+/* Small devices (landscape phones, 576px and up) */
+  @media (min-width: 576px) {
+    body{
+      background-color: white;
+    }
+
+    .main-container {
+      top: -117px;  /* Due to author-top-wrapper and nav-wrapper (75px +  (32px + 5px + 5px) */
+    }
+
+    .author-top-wrapper{
+      /*background-color: magenta;*/
+      margin-left: 1.0rem;
+    }
+
+    .nav-wrapper{
+      /*margin-left: 1.0rem;*/
+      width: initial;
+      /*padding-bottom: 6px;*/
+    }
+
+    .navbar-collapse{
+      background-color: transparent;
+    }
+
+    .navbar-toggler{
+      margin-left: 7px;
+    }
+
+    .nav-separator{
+      display: initial;
+      /*padding-left: 15px;*/
+      padding-right: 5px;
+    }
+  }
+
+  /* Medium devices (tablets, 768px and up) */
+  @media (min-width: 768px) {
+    .main-container {
+      top: -42px;   /* Due to nav-wrapper (32px + 10px) */
+    }
+
+    .nav-wrapper{
+      /*margin-left: 15px;*/
+      /*padding-bottom: 6px;*/
+    }
+
+
+    .sidebar {
+      margin-left: 15px;
+      margin-top: -42px;
+    }
+
+    .author-avatar {
+      width: 115px;
+      height: 115px;
+    }
+
+    .author-avatar img {
+      max-width: 110px;
+      border-radius: 50%;
+    }
+
+    .author-content {
+      padding-left: 0;
+      color: black;
+    }
+
+    .author-content a {
+    }
+
+    .author-name {
+      font-size: 1.35rem;
+    }
+
+    .author-bio {
+      font-size: 0.8rem;
+    }
+  }
+
+  /* Large devices (desktops, 992px and up) */
+  @media (min-width: 992px) {
+
+    .author-name {
+      font-size: 1.5rem;
+    }
+
+    .author-bio {
+      font-size: 0.9rem;
+    }
+  }
+
+  /* Extra large devices (large desktops, 1200px and up) */
+  @media (min-width: 1200px) {
+    .class-name {font-size: 48px;}
+  }
+
+      /* Flush the navbar to the bottom of the wrapper.*/
+      /*position: absolute;*/
+      /*bottom: 0;*/
+

@@ -1,5 +1,5 @@
 {{ $current_page := . }}
-<nav class="navbar navbar-light fixed-top navbar-expand-lg py-0" id="navbar-main">
+<nav class="navbar navbar-light fixed-top navbar-expand-sm py-0" id="navbar-main">
   <div class="container">
 
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -16,7 +16,7 @@
       {{ if or site.Menus.main .IsTranslated }}
       <button type="button" class="navbar-toggler" data-toggle="collapse"
               data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="{{ i18n "toggle_navigation" }}">
-        <span><i class="fas fa-bars"></i></span>
+        <span><i class="fas fa-bars nav-hamburger"></i></span>
       </button>
       {{ end }}
 
