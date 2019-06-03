@@ -14,8 +14,10 @@
       </li>
       {{ range $i, $e := $page.Params.sidebar.links}}
       <li>
-        <a itemprop="sameAs" href="{{ .url | safeURL }}" target="_blank" rel="noopener noreferrer">
-          {{ .name }}
+        <a href="{{ .url | relLangURL }}" data-target="{{ .URL }}" {{ ($.Scratch.Get "target") | safeHTMLAttr }}>
+          {{ .Pre }}
+          <span>{{ .name | safeHTML }}</span>
+          {{ .Post }}
         </a>
       </li>
       {{ end }}
