@@ -7,7 +7,7 @@ headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
 weight = 60  # Order that this section will appear.
 
-title = "Recent Posts"
+title = "Recent Blog Posts"
 subtitle = ""
 
 [content]
@@ -31,6 +31,9 @@ subtitle = ""
     exclude_featured = false
   
 [design]
+  # Choose how many columns the section has. Valid values: 1 or 2.
+  columns = "1"
+
   # Toggle between the various page layout types.
   #   1 = List
   #   2 = Compact
@@ -57,7 +60,11 @@ subtitle = ""
 
   # Text color (true=light or false=dark).
   # text_color_light = true  
-  
+
+[design.spacing]
+  # Customize the section spacing. Order is top, right, bottom, left.
+  padding = ["10px", "0", "20px", "0"]
+
 [advanced]
  # Custom CSS. 
  css_style = ""
