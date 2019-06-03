@@ -1,3 +1,7 @@
+.sticky-top {
+  top: 5px;
+}
+
 body{
   margin-top: 0px;
   min-width:375px;
@@ -65,6 +69,11 @@ p {
 
 
 /* Extra small devices (landscape phones, under 576px) */
+    .header-image-wrapper {
+      /* Header image size - main container offset. */
+      top: calc(-350px + 75px + 5px);
+    }
+
     .main-container {
       position: relative;
       top: -75px; /* Due to author-top-wrapper */
@@ -189,6 +198,11 @@ p {
       background-color: white;
     }
 
+    .header-image-wrapper {
+      /* Header image size - main container offset. */
+      top: calc(-350px + 117px + 5px);
+    }
+
     .main-container {
       top: -117px;  /* Due to author-top-wrapper and nav-wrapper (75px +  (32px + 5px + 5px) */
     }
@@ -221,6 +235,12 @@ p {
 
   /* Medium devices (tablets, 768px and up) */
   @media (min-width: 768px) {
+
+    .header-image-wrapper {
+      /* Header image size - main container offset. */
+      top: calc(-350px + 42px + 5px);
+    }
+
     .main-container {
       top: -42px;   /* Due to nav-wrapper (32px + 10px) */
     }

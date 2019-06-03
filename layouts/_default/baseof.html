@@ -11,7 +11,7 @@
 
   <div class="container main-container">
 
-    <div class="row no-gutters">
+    <div class="row no-gutters sticky-top">
       <div class="col-10 d-block col-sm-12 d-md-none">
         <div class="author-top-wrapper">
           {{ partial "author_block.html" . }}
@@ -28,12 +28,12 @@
     </div>
     <div class="row no-gutters">
       <div class="d-none d-md-block col-md-3 sidebar-width">
-        <div class="sidebar sticky" itemprop="author" itemscope itemtype="http://schema.org/Person">
+        <div class="sidebar sticky-top" itemprop="author" itemscope itemtype="http://schema.org/Person">
           {{ partial "sidebar.html" . }}
         </div>
       </div>
       <div class="col">
-        <div class="container-fluid main-wrapper">
+        <div class="main-wrapper">
           <article class="page">
             <div class="page_container">
               <section class="page_content">
