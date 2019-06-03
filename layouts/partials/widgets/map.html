@@ -17,7 +17,18 @@
       </div>
   {{ end }}
         <div class="map-container-widget">
-          <iframe frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="National Geographic Map-Park Visits" src="//www.arcgis.com/apps/Embed/index.html?webmap=12e3b9ea23da4ce9a6a24b4a6306555a&amp;extent=-128.4971,22.6261,-63.5898,52.2627&amp;zoom=true&amp;previewImage=false&amp;scale=true&amp;basemap_gallery=true&amp;disable_scroll=false&amp;theme=light"></iframe>
+          <iframe allowfullscreen frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="{{ $st.Params.map.title }}" src="{{ $st.Params.map.inline_source }}"></iframe>
+        </div>
+        <div class="map-container-nav">
+          {{if $st.Params.map.lightbox_source }}
+          <div class="map-container-lightbox text-center">
+            {{ if $st.Params.map.lightbox_button_tex }}
+            <a role="button" class="btn btn-outline-primary btn-lg" data-fancybox data-type="iframe" data-src="https://www.arcgis.com/apps/View/index.html?appid=f621cf0b221b432d811f7462f0b22678" href="javascript:;">{{ $st.Params.map.lightbox_button_tex }}</a>
+            {{ end }}
+          </div>
+          {{ end }}
         </div>
     </div>
+    {{ $st.Content }}
 </div>
+
