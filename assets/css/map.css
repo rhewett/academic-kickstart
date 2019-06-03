@@ -7,7 +7,6 @@
   padding-bottom: 61%;
 }
 
-.map-container-widget object,
 .map-container-widget iframe{
   position: absolute;
   top: 50px;
@@ -18,4 +17,10 @@
   display: block;
   /* 5px for top of section, 37 for heading text, 10 for bottom of section*/
   height: calc(100% - 5px - 37px - 10px)
+}
+
+.map-container-widget-two-column iframe{
+  /* 5px for top of section, 37 for heading text, 10 for bottom of section*/
+  top: 0px;
+  height: 100%;
 }
