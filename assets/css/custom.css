@@ -426,3 +426,19 @@ p {
 .section-heading.academic-widget-one-column{
   text-align: center;
 }
+
+.portrait {
+  max-width: 250px;
+  max-height: 250px;
+  width: 100%;
+  height: 100%;
+}
+
+#profile {
+  padding: 10px;
+}
+
+.bio-icons {
+  text-align: center;
+  width: 100%;
+}
