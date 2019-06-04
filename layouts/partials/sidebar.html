@@ -9,9 +9,6 @@
   {{ partial "author_block.html" . }}
   <div class="author-urls-wrapper">
     <ul class="author-urls social-icons" aria-hidden="true">
-      <li itemprop="homeLocation" itemscope itemtype="http://schema.org/Place">
-        <span itemprop="name">{{ $page.Params.sidebar.subtext2 }}</span>
-      </li>
       {{ range $i, $e := $page.Params.sidebar.links}}
       <li>
         <a href="{{ .url | relLangURL }}" data-target="{{ .URL }}" {{ ($.Scratch.Get "target") | safeHTMLAttr }}>

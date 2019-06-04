@@ -4,7 +4,7 @@
 
 body{
   margin-top: 0px;
-  min-width:375px;
+  min-width: 375px;
   line-height: 1.5;
 }
 
@@ -169,6 +169,7 @@ p {
     .author-content>h3 {
       font-weight: 400;
       color: inherit;
+      font-size: 1.65rem;
     }
 
     .author-content a {
@@ -184,7 +185,14 @@ p {
     .author-bio {
       font-family: 'Chakra Petch', sans-serif;
       margin: 0;
-      font-size: 0.9rem;
+      font-size: 1.0rem;
+    }
+
+    .author-location {
+      font-family: 'Chakra Petch', sans-serif;
+      margin: 0;
+      font-size: 1.0rem;
+      display: none;
     }
 
     .main-wrapper{
@@ -261,22 +269,29 @@ p {
     }
 
     .author-bio {
-      font-size: 0.9rem;
+      font-size: 1.0rem;
+    }
+
+    .author-location {
+      display: block;
     }
 
     .author-avatar {
-      width: 115px;
+      width: 100%;
       height: 115px;
     }
 
     .author-avatar img {
       max-width: 110px;
       border-radius: 50%;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .author-content {
       padding-left: 0;
       color: black;
+      text-align: center;
     }
 
     .author-content a {
@@ -284,10 +299,6 @@ p {
 
     .author-name {
       font-size: 1.35rem;
-    }
-
-    .author-bio {
-      font-size: 0.8rem;
     }
   }
 
@@ -313,6 +324,8 @@ p {
 
   cursor: pointer;
   vertical-align: middle;
+
+  margin-top: 15px;
 }
 
 .author-urls-wrapper li:last-child a {
