@@ -1,5 +1,6 @@
 {{ $ := .root }}
 {{ $page := .page }}
+{{ $columns := $page.Params.design.columns | default "2" }}
 
 {{ $author := "" }}
 {{ if .author }}
@@ -19,6 +20,8 @@
 
 <!-- About widget -->
 <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="{{ if site.Params.email }}person-email{{ end }}{{ if site.Params.phone }} person-telephone{{ end }}{{ if site.Params.address}} person-address{{ end }}">
+
+  {{ if ne $columns "1" }}
   <div class="col-12 col-lg-4">
 
     {{ partial "widget_bio_portrait_section.html" . }}
@@ -28,7 +31,7 @@
 
     {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
     {{ if and $page.Params.widget $page.Title }}
-      <h1>{{ $page.Title | markdownify | emojify }}</h1>
+      {{ with $page.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
     {{ end }}
 
     {{ $person_page.Content }}
@@ -36,4 +39,25 @@
     {{ partial "widget_bio_list_section.html" . }}
 
   </div>
+  {{ else }}
+  <div class="col-12">
+
+    {{ partial "widget_bio_portrait_section.html" . }}
+
+  </div>
+  <div class="col-12" itemprop="description">
+
+    {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
+    {{ if and $page.Params.widget $page.Title }}
+      {{ with $page.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+    {{ end }}
+
+    {{ $person_page.Content }}
+
+    {{ partial "widget_bio_list_section.html" . }}
+
+  </div>
+  {{ end }}
+
+
 </div>
