@@ -22,40 +22,76 @@
 <div class="row" itemprop="author" itemscope itemtype="http://schema.org/Person" itemref="{{ if site.Params.email }}person-email{{ end }}{{ if site.Params.phone }} person-telephone{{ end }}{{ if site.Params.address}} person-address{{ end }}">
 
   {{ if ne $columns "1" }}
-  <div class="col-12 col-lg-4">
+  <div class="col-12 col-md-4">
 
     {{ partial "widget_bio_portrait_section.html" . }}
 
   </div>
-  <div class="col-12 col-lg-8" itemprop="description">
+  <div class="col-12 col-md-8" itemprop="description">
 
     {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
     {{ if and $page.Params.widget $page.Title }}
+    <div class="section-heading academic-widget-two-column">
       {{ with $page.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+    </div>
     {{ end }}
 
-    {{ $person_page.Content }}
+    {{ $page.Content }}
 
     {{ partial "widget_bio_list_section.html" . }}
 
   </div>
   {{ else }}
-  <div class="col-12">
+  <div class="col-sm-12 col-md-5 order-last col-xl-4">
 
     {{ partial "widget_bio_portrait_section.html" . }}
 
   </div>
-  <div class="col-12" itemprop="description">
+  <div class="col-sm-12 col-md-7 col-xl-8" itemprop="description">
 
     {{/* Only display widget title in explicit instances of about widget, not in author pages. */}}
     {{ if and $page.Params.widget $page.Title }}
+    <div class="section-heading academic-widget-one-column">
       {{ with $page.Title }}<h1>{{ . | markdownify | emojify }}</h1>{{ end }}
+    </div>
     {{ end }}
 
-    {{ $person_page.Content }}
+    {{ $page.Content }}
 
+
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
+    <div class="bio-icons">
+      <ul class="network-icon" aria-hidden="true">
+        {{ range $person.social }}
+        {{ $pack := or .icon_pack "fas" }}
+        {{ $pack_prefix := $pack }}
+        {{ if in (slice "fab" "fas" "far" "fal") $pack }}
+          {{ $pack_prefix = "fa" }}
+        {{ end }}
+        {{ $link := .link }}
+        {{ $scheme := (urls.Parse $link).Scheme }}
+        {{ $target := "" }}
+        {{ if not $scheme }}
+          {{ $link = .link | relLangURL }}
+        {{ else if in (slice "http" "https") $scheme }}
+          {{ $target = "target=\"_blank\" rel=\"noopener\"" }}
+        {{ end }}
+        <li>
+          <a itemprop="sameAs" href="{{ $link | safeURL }}" {{ $target | safeHTMLAttr }}>
+            <i class="{{ $pack }} {{ $pack_prefix }}-{{ .icon }} big-icon"></i>
+          </a>
+        </li>
+        {{ end }}
+      </ul>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-12">
     {{ partial "widget_bio_list_section.html" . }}
-
   </div>
   {{ end }}
 

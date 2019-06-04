@@ -17,10 +17,11 @@
 {{ $avatar := ($person_page.Resources.ByType "image").GetMatch "*avatar*" }}
 {{ $portrait := ($person_page.Resources.ByType "image").GetMatch "*portrait*" }}
 
-    <div id="profile">
+
+    <div id="profile" class="testtesttest">
 
       {{ if $portrait }}
-      {{ $portrait_image := $portrait.Fill "200x200 Center" }}
+      {{ $portrait_image := $portrait.Fill "250x250 Center" }}
       <img class="portrait" src="{{ $portrait_image.RelPermalink }}" itemprop="image" alt="Avatar">
       {{ else if site.Params.gravatar }}
       <img class="portrait" src="https://s.gravatar.com/avatar/{{ md5 $person.email }}?s=200')" itemprop="image" alt="Avatar">
@@ -28,6 +29,7 @@
       {{ $avatar_image := $avatar.Fill "250x250 Center" }}
       <img class="portrait" src="{{ $avatar_image.RelPermalink }}" itemprop="image" alt="Avatar">
       {{ end }}
+{{/*
 
       <div class="portrait-title">
         <h2 itemprop="name">{{ $person.name }}</h2>
@@ -43,7 +45,9 @@
       </div>
 
       <link itemprop="url" href="{{ .Permalink }}">
+*/}}
 
+{{/*
       <ul class="network-icon" aria-hidden="true">
         {{ range $person.social }}
         {{ $pack := or .icon_pack "fas" }}
@@ -66,5 +70,5 @@
         </li>
         {{ end }}
       </ul>
-
+*/}}
     </div>
