@@ -480,3 +480,35 @@ p {
   background: #202020;
 }
 
+
+.photo-card-preview-container a img{
+  max-height: 300px;
+  max-width: inherit;
+  background-color: #1D1D1D;
+  padding: 10px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-card-preview-container {
+  max-height: 300px;
+  margin-top: 10px;
+  margin-bottom: 10px; 
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photo-card-preview-author{
+  display: none;
+  color: white;
+  position: relative;
+  top: -20px;
+  left: 11px;
+  font-size: 6px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.universal-wrapper {
+  width: inherit;
+}

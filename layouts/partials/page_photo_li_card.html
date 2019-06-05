@@ -26,42 +26,22 @@
   {{ $summary = $item.Content }}
 {{ end }}
 
-<div class="card-simple" itemscope itemtype="http://schema.org/{{$microdata_type}}">
-
-  {{ if eq $item.Type "talk" }}
-  <div class="article-metadata">
-    {{ if $item.Params.authors }}
-    <div itemprop="author">
-      {{ partial "page_metadata_authors" $item }}
-    </div>
-    {{ end }}
-    <span itemprop="startDate">
-      {{ $date := $item.Date }}
-      {{ (time $date).Format site.Params.date_format }}
-      {{ if not $item.Params.all_day }}
-        {{ (time $date).Format (site.Params.time_format | default "3:04 PM") }}
-        {{ with $item.Params.date_end }}
-        &mdash; {{ (time .).Format (site.Params.time_format | default "3:04 PM") }}
-        {{ end }}
-      {{ end }}
-    </span>
-    {{ with $item.Params.location }}
-    <span class="middot-divider"></span>
-    <span itemprop="location">{{ . }}</span>
-    {{ end }}
-  </div>
-  {{ else }}
-    {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
+{{/* Get author info */}}
+{{ $author_urlized := "" }}
+{{ if and (not .Params.authors) (.Scratch.Get "superuser_username") }}
+  {{ $author_urlized = (.Scratch.Get "superuser_username") }}
+{{ else }}
+  {{ $first_author := "" }}
+  {{ if .Params.authors }}
+    {{ $first_author = index .Params.authors 0 }}
   {{ end }}
+  {{ $author_urlized = urlize $first_author }}
+{{ end }}
+{{ $taxonomy := "authors" }}
+{{ $profile_page := site.GetPage (printf "/%s/%s" $taxonomy $author_urlized) }}
+{{ $author := $profile_page.Params.name }}
 
-  {{ $resource := ($item.Resources.ByType "image").GetMatch "*featured*" }}
-  {{ $anchor := $item.Params.image.focal_point | default "Smart" }}
-  {{ with $resource }}
-  {{ $image := .Fill (printf "918x517 q90 %s" $anchor) }}
-  <a href="{{ $item.RelPermalink }}">
-      <img src="{{ $image.RelPermalink }}" class="article-banner" itemprop="image" alt="">
-  </a>
-  {{end}}
+<div class="card-simple" itemscope itemtype="http://schema.org/{{$microdata_type}}">
 
   <h3 class="article-title mb-1 mt-3" itemprop="name">
     <a href="{{ $item.RelPermalink }}" itemprop="url">{{ $item.Title }}</a>
@@ -72,6 +52,29 @@
     {{ . }}
   </div>
   {{ end }}
+
+  {{ partial "functions/build_smugmug_url" (dict "context" . "photo" $item.Params.photo "size" $item.Params.photo.preview_size) }}
+  {{ $scr := .Scratch }}
+  {{ $image_url := $scr.Get "smugmug_url" }}
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="img-fluid photo-card-preview-container">
+        <a href="{{ $item.RelPermalink }}">
+            <img src="{{ $image_url }}" class="photo-card-preview" itemprop="image" alt="">
+        </a>
+        </div>
+        <div class="photo-card-preview-author">
+          <span>
+          {{ lower $author }} | {{ lower site.Title }}
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {{ partial "page_metadata" (dict "page" $item "is_list" 1) }}
 
   {{ if $show_buttons }}
   <div class="btn-links">
