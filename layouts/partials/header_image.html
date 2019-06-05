@@ -1,18 +1,21 @@
 {{/* Get widget page */}}
-{{ $page := "" }}
+{{ $page_path := "" }}
 {{ if .IsHome }}
-  {{ $page = "/home" }}
+  {{ $page_path = "/home" }}
 {{ else }}
-  {{ $page = .File.Path }}
+  {{ $page_path = .File.Path }}
 {{ end }}
-{{ $headless_bundle := site.GetPage $page }}
+{{ $page := site.GetPage $page_path }}
 
-{{ $header_image := "" }}
-{{ if $headless_bundle.Params.header_image }}
-  {{ $header_image = $headless_bundle.Params.header_image }}
-{{ else }}
-  {{ $header_image = site.Params.header_image}}
+{{ $header_image := site.Params.header_image }}
+{{ if $page.Params.header_image }}
+  {{ $header_image = $page.Params.header_image }}
+{{ else if $page.Parent }}
+  {{if $page.Parent.Params.header_image }}
+    {{ $header_image = $page.Parent.Params.header_image }}
+  {{ end }}
 {{ end }}
+
 
   <div class="header-image-wrapper sticky-top">
     <div class="row no-gutters">
