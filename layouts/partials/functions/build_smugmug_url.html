@@ -1,0 +1,14 @@
+{{ $scr := .context.Scratch }}
+{{ $photo := .photo }}
+
+{{ $gallery := $photo.gallery }}
+{{ $image_key := $photo.image_key }}
+{{ $version := $photo.version }}
+{{ $image_base := $photo.image_base }}
+{{ $size := .size }}
+
+{{ $url := (printf "%s/%s/%s/%s/%s-%s.jpg" $gallery $image_key $version $size $image_base $size) }}
+
+{{ $scr.Set "smugmug_url" $url}}
+
+
