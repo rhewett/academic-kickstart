@@ -1,3 +1,19 @@
+{{ $author_urlized := "" }}
+{{ if and (not .Params.authors) (.Scratch.Get "superuser_username") }}
+  {{ $author_urlized = (.Scratch.Get "superuser_username") }}
+{{ else }}
+  {{ $first_author := "" }}
+  {{ if .Params.authors }}
+    {{ $first_author = index .Params.authors 0 }}
+  {{ end }}
+  {{ $author_urlized = urlize $first_author }}
+{{ end }}
+
+{{ $taxonomy := "authors" }}
+{{ $profile_page := site.GetPage (printf "/%s/%s" $taxonomy $author_urlized) }}
+{{ $author := $profile_page.Params.name }}
+
+
 {{ $image_source_th := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "Th" .Params.photo.image_base "Th") }}
 {{ $image_source_s := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "S" .Params.photo.image_base "S") }}
 {{ $image_source_m := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "M" .Params.photo.image_base "M") }}
@@ -30,7 +46,7 @@
               </a>
             </div>
             <div class="page-photo-author">
-              russell j. hewett | rjh.io
+              {{ lower $author }} | {{ lower site.Title }}
             </div>
           </div>
         </div>
