@@ -11,24 +11,12 @@ photo:
   image_key: "i-QD4R7z8"
   version: "100"
   image_base: "20120817_140549_D70_0011"
-  display_size_normal: "L"
-  display_size_small: "S"
-  display_size_lightbox: "X4"
+  preview_size: "L"
 
 profile: true
 
 tag_taxonomy: "photos"
-
 photos: ["yellowstone", "landscape"]
-
-#header:
-#  image: "https://photos.smugmug.com/Galleries/Yellowstone-National-Park/i-QD4R7z8/100/Th/20120817_140549_D70_0011-Th.jpg"
-
-image:
-  featured: "https://photos.smugmug.com/Galleries/Yellowstone-National-Park/i-QD4R7z8/100/Th/20120817_140549_D70_0011-Th.jpg"
-  caption: "butt"
-  focal_point: ""
-  preview_only: true
 
 ---
 

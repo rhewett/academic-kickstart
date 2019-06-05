@@ -1,5 +1,5 @@
 +++
-title = "photos"
+title = "photography"
 
 # View.
 #   1 = List
