@@ -172,3 +172,9 @@ sharing = true
 
 [custom]
   header_image = "https://photos.smugmug.com/Galleries/California/i-qhQx2zX/1/e3693687/X4/20141122_104941_s100_2-X4.jpg"
+
+[custom.sidebar]
+  image = "/img/headshot_cascades.jpg"
+  text = "russell j. hewett"
+  subtext1 = "computational scientist"
+  subtext2 = "blacksburg, va"

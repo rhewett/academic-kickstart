@@ -6,14 +6,41 @@
 {{ end }}
 {{ $page := site.GetPage $page_path }}
 
+{{ $image := "" }}
+{{ if $page.Params.sidebar.image }}
+{{ 	 $image = $page.Params.sidebar.image }}
+{{ else }}
+{{ 	 $image = site.Params.custom.sidebar.image }}
+{{ end }}
+
+{{ $text := "" }}
+{{ if $page.Params.sidebar.text }}
+{{ 	 $text = $page.Params.sidebar.text }}
+{{ else }}
+{{ 	 $text = site.Params.custom.sidebar.text }}
+{{ end }}
+
+{{ $subtext1 := "" }}
+{{ if $page.Params.sidebar.subtext1 }}
+{{ 	 $subtext1 = $page.Params.sidebar.subtext1 }}
+{{ else }}
+{{ 	 $subtext1 = site.Params.custom.sidebar.subtext1 }}
+{{ end }}
+
+{{ $subtext2 := "" }}
+{{ if $page.Params.sidebar.subtext2 }}
+{{ 	 $subtext2 = $page.Params.sidebar.subtext2 }}
+{{ else }}
+{{ 	 $subtext2 = site.Params.custom.sidebar.subtext2 }}
+{{ end }}
 
 <div class="author-avatar">
   <a href="{{ "/" | relURL }}">
-    <img src="{{ $page.Params.sidebar.image | absURL }}" alt="{{ $page.Params.sidebar.text }}" itemprop="image">
+    <img src="{{ $image | absURL }}" alt="{{ $text }}" itemprop="image">
   </a>
 </div>
 <div class="author-content">
-  <h3 class="author-name" itemprop="name">{{ $page.Params.sidebar.text }}</h3>
-  <p class="author-bio" itemprop="description">{{ $page.Params.sidebar.subtext1 }}</p>
-  <p class="author-location" itemprop="name">{{ $page.Params.sidebar.subtext2 }}</p>
+  <h3 class="author-name" itemprop="name">{{ $text }}</h3>
+  <p class="author-bio" itemprop="description">{{ $subtext1 }}</p>
+  <p class="author-location" itemprop="name">{{ $subtext2 }}</p>
 </div>
