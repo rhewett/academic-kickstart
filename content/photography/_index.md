@@ -5,7 +5,7 @@ title = "photos"
 #   1 = List
 #   2 = Compact
 #   3 = Card
-view = 2
+view = 3
 
 header_image = "https://photos.smugmug.com/Galleries/Southern-Utah/i-BgsJkJf/5/226d29a2/X4/%5BGroup%2024%5D-20080314_194328_D70_0061_dehazed_20080314_194430_D70_0081_dehazed-12%20images-X4.jpg"
 
