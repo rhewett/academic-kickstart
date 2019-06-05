@@ -11,7 +11,7 @@
 {{ if $headless_bundle.Params.header_image }}
   {{ $header_image = $headless_bundle.Params.header_image }}
 {{ else }}
-  {{ $header_image = site.Params.custom.header_image}}
+  {{ $header_image = site.Params.header_image}}
 {{ end }}
 
   <div class="header-image-wrapper sticky-top">

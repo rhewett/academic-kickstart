@@ -130,6 +130,17 @@ docs_section_pager = true  # Display pager in Docs layout (e.g. tutorials)?
 # Enable in-built social sharing buttons? (true/false)
 sharing = true
 
+
+
+############################
+## Custom options         ##
+############################
+
+header_image = "https://photos.smugmug.com/Galleries/California/i-qhQx2zX/1/e3693687/X4/20141122_104941_s100_2-X4.jpg"
+
+
+
+
 # Configuration of publication pages.
 [publications]
   # Date format (refer to https://sourcethemes.com/academic/docs/customization/#date-format )
@@ -170,10 +181,7 @@ sharing = true
 ## Custom options         ##
 ############################
 
-[custom]
-  header_image = "https://photos.smugmug.com/Galleries/California/i-qhQx2zX/1/e3693687/X4/20141122_104941_s100_2-X4.jpg"
-
-[custom.sidebar]
+[sidebar]
   image = "/img/headshot_cascades.jpg"
   text = "russell j. hewett"
   subtext1 = "computational scientist"

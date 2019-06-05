@@ -10,28 +10,28 @@
 {{ if $page.Params.sidebar.image }}
 {{ 	 $image = $page.Params.sidebar.image }}
 {{ else }}
-{{ 	 $image = site.Params.custom.sidebar.image }}
+{{ 	 $image = site.Params.sidebar.image }}
 {{ end }}
 
 {{ $text := "" }}
 {{ if $page.Params.sidebar.text }}
 {{ 	 $text = $page.Params.sidebar.text }}
 {{ else }}
-{{ 	 $text = site.Params.custom.sidebar.text }}
+{{ 	 $text = site.Params.sidebar.text }}
 {{ end }}
 
 {{ $subtext1 := "" }}
 {{ if $page.Params.sidebar.subtext1 }}
 {{ 	 $subtext1 = $page.Params.sidebar.subtext1 }}
 {{ else }}
-{{ 	 $subtext1 = site.Params.custom.sidebar.subtext1 }}
+{{ 	 $subtext1 = site.Params.sidebar.subtext1 }}
 {{ end }}
 
 {{ $subtext2 := "" }}
 {{ if $page.Params.sidebar.subtext2 }}
 {{ 	 $subtext2 = $page.Params.sidebar.subtext2 }}
 {{ else }}
-{{ 	 $subtext2 = site.Params.custom.sidebar.subtext2 }}
+{{ 	 $subtext2 = site.Params.sidebar.subtext2 }}
 {{ end }}
 
 <div class="author-avatar">
