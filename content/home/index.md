@@ -11,10 +11,10 @@ header_image = "https://photos.smugmug.com/Galleries/Dakotas/i-dqJvvGL/0/a8a1f79
   subtext2 = "blacksburg, va"
 
   [[sidebar.links]]
-  name = "blah"
-  url = "blahblah"
+  name = "Natl Park Visits"
+  url = "#parksmap"
 
   [[sidebar.links]]
-  name = "blah2"
-  url = "blahblah2"
+  name = "Recent Posts"
+  url = "#posts"
 +++

@@ -3,7 +3,7 @@
 widget = "bio"  # See https://sourcethemes.com/academic/docs/page-builder/
 headless = true  # This file represents a page section.
 active = true  # Activate this widget? true/false
-weight = 20  # Order that this section will appear in.
+weight = 10  # Order that this section will appear in.
 
 title = "about me"
 
@@ -21,4 +21,4 @@ author = "rjh"
   padding = ["50px", "0", "20px", "0"]
 +++
 
-I am an assistant professor of mathematics and CMDA at Virginia Tech.  My research interests lie at the intersection of inverse problems, deep learning, and high-performance computing.  My work is motivated by problems in science with extreme data and compute scales.  I also enjoy in woodworking, photography, hiking, and visiting our national parks.
+I am an assistant professor of mathematics and CMDA at Virginia Tech.  My research interests lie at the intersection of inverse problems, deep learning, and high-performance computing.  My work is motivated by problems in science with extreme data and compute scales.  I also enjoy in woodworking, photography, hiking, and visiting our national parks.  I am available for consulting.

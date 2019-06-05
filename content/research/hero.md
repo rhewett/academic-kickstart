@@ -30,6 +30,10 @@ hero_media = "hero-academic.png"
   # Text color (true=light or false=dark).
   text_color_light = true
 
+[design.spacing]
+  # Customize the section spacing. Order is top, right, bottom, left.
+  padding = ["50px", "0", "20px", "0"]
+
 # Call to action links (optional).
 #   Display link(s) by specifying a URL and label below. Icon is optional for `[cta]`.
 #   Remove a link/note by deleting a cta/note block.
