@@ -455,3 +455,28 @@ p {
   text-align: center;
   width: 100%;
 }
+
+
+
+
+.page-photo-container a[data-fancybox] img{
+  width: 100%;
+  height: 100%;
+  background-color: #1D1D1D;
+  padding: 15px;
+}
+
+.page-photo-author{
+  color: white;
+  position: relative;
+  top: -22px;
+  left: 15px;
+  font-size: 10px;
+}
+
+.fancybox-bg,
+.fancybox-is-open .fancybox-bg{
+  opacity: 1;
+  background: #202020;
+}
+
