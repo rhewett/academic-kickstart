@@ -1,9 +1,9 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Pysit"
-summary: "PySIT: Python Seismic Imaging Toolbox"
-authors: [rjh, Laurent Demanet]
+title: "Solar Tomography"
+summary: "3D reconstructions of the solar atmosphere"
+authors: [rjh, Mark D. Butala, Farzad Kamalabadi, Michael T. Heath]
 tags: []
 categories: []
 date: 2019-05-31T16:03:01-04:00

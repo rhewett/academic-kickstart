@@ -1,9 +1,9 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Pysit"
-summary: "PySIT: Python Seismic Imaging Toolbox"
-authors: [rjh, Laurent Demanet]
+title: "Sweeping Preconditioners"
+summary: "3D, high-frequency Helmholtz"
+authors: [Leonardo Zepeda-Nunez, Matthias Taus, Adrien Scheuer, rjh, Laurent Demanet]
 tags: []
 categories: []
 date: 2019-05-31T16:03:01-04:00

@@ -1,9 +1,9 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Pysit"
-summary: "PySIT: Python Seismic Imaging Toolbox"
-authors: [rjh, Laurent Demanet]
+title: "SunPy"
+summary: "SunPy: Solar Data Analysis in Python"
+authors: [rjh]
 tags: []
 categories: []
 date: 2019-05-31T16:03:01-04:00
@@ -26,6 +26,9 @@ image:
 #   url: https://twitter.com
 #   icon_pack: fab
 #   icon: twitter
+links:
+ - name: sunpy.org
+   url: "https://sunpy.org/"
 
 url_code: ""
 url_pdf: ""
