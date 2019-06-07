@@ -1,29 +1,42 @@
 ---
+# Documentation: https://sourcethemes.com/academic/docs/managing-content/
+
 title: "Lone Bison"
 subtitle: "What happens when you see your first bison in Yellowstone NP?"
 summary: "What happens when you see your first bison in Yellowstone NP?"
-date: 2019-01-29T09:02:24-05:00
-draft: true
-featured: true
+authors: [rjh]
 
-authors:
-- rjh
+tag_taxonomy: "photos"
+photos: []
+
+tags: []
+categories: []
+
+date: 2019-06-07T13:14:53-04:00
+lastmod: 2019-06-07T13:14:53-04:00
+
+featured: true
+draft: false
+
+image:
+  preview_only: true
 
 photo:
+  # sources: "smugmug"
   source: "smugmug"
   gallery: "https://photos.smugmug.com/Galleries/Yellowstone-National-Park"
   image_key: "i-QD4R7z8"
   version: "100"
   image_base: "20120817_140549_D70_0011"
   preview_size: "M"
+  meta:
+    location: "Yellowstone NP, Wyoming, USA"
+    title: "Lone Bison"
+    photographer: "Russell J. Hewett"
+    caption: ""
+    date: "2012-08-17"
 
 profile: true
-
-tag_taxonomy: "photos"
-photos: ["yellowstone", "landscape"]
-
-image:
-  preview_only: true
 
 ---
 
