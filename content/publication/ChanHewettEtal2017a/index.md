@@ -1,9 +1,11 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
+math: true
+
 title: "Weight-adjusted discontinuous Galerkin methods: wave propagation in heterogeneous media"
 authors: ["Jesse Chan", rjh, "T. Warburton"]
-date: 2017-12-12T00:00:00-00:00
+date: 2017-12-12
 doi: "10.1137/16M1089186"
 
 # Schedule page publish date (NOT publication's date).
@@ -76,6 +78,4 @@ projects: []
 #   E.g. `slides: "example"` references `content/slides/example/index.md`.
 #   Otherwise, set `slides: ""`.
 slides: ""
-
-math: true
 ---
