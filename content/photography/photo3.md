@@ -1,5 +1,7 @@
 ---
 title: "Lone Bison"
+subtitle: "What happens when you see your first bison in Yellowstone NP?"
+summary: "What happens when you see your first bison in Yellowstone NP?"
 date: 2019-01-29T09:02:24-05:00
 draft: true
 
@@ -12,6 +14,12 @@ photo:
   version: "100"
   image_base: "20120817_140549_D70_0011"
   preview_size: "L"
+
+meta:
+  location: "Yellowstone NP, Wyoming, USA"
+  title: "Lone Bison"
+  photographer: "Russell J. Hewett"
+  caption: ""
 
 profile: true
 

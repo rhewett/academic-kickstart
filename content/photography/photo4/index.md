@@ -4,6 +4,7 @@ subtitle: "What happens when you see your first bison in Yellowstone NP?"
 summary: "What happens when you see your first bison in Yellowstone NP?"
 date: 2019-01-29T09:02:24-05:00
 draft: true
+featured: true
 
 authors:
 - rjh

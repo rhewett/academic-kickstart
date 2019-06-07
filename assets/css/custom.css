@@ -482,7 +482,7 @@ p {
 
 
 .photo-card-preview-container a img{
-  max-height: 300px;
+  max-height: 400px;
   max-width: inherit;
   background-color: #1D1D1D;
   padding: 10px;
@@ -491,7 +491,7 @@ p {
 }
 
 .photo-card-preview-container {
-  max-height: 300px;
+  max-height: 400px;
   margin-top: 10px;
   margin-bottom: 10px; 
   margin-left: auto;
