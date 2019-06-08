@@ -13,19 +13,35 @@
 {{ $profile_page := site.GetPage (printf "/%s/%s" $taxonomy $author_urlized) }}
 {{ $author := $profile_page.Params.name }}
 
+{{ $scr := .Scratch }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "L") }}
+{{ $image_source_l := $scr.Get "smugmug_url" }}
 
-{{ $image_source_th := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "Th" .Params.photo.image_base "Th") }}
-{{ $image_source_s := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "S" .Params.photo.image_base "S") }}
-{{ $image_source_m := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "M" .Params.photo.image_base "M") }}
-{{ $image_source_l := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "L" .Params.photo.image_base "L") }}
-{{ $image_source_xl := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "XL" .Params.photo.image_base "XL") }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "Th") }}
+{{ $image_source_th := $scr.Get "smugmug_url" }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "S") }}
+{{ $image_source_s := $scr.Get "smugmug_url" }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "M") }}
+{{ $image_source_m := $scr.Get "smugmug_url" }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "L") }}
+{{ $image_source_l := $scr.Get "smugmug_url" }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "XL") }}
+{{ $image_source_xl := $scr.Get "smugmug_url" }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "X2") }}
+{{ $image_source_x2 := $scr.Get "smugmug_url" }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "X3") }}
+{{ $image_source_x3 := $scr.Get "smugmug_url" }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "X4") }}
+{{ $image_source_x4 := $scr.Get "smugmug_url" }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "X5") }}
+{{ $image_source_x5 := $scr.Get "smugmug_url" }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "4k") }}
+{{ $image_source_4k := $scr.Get "smugmug_url" }}
+{{ partial "functions/build_smugmug_url" (dict "context" . "photo" .Params.photo "size" "5k") }}
+{{ $image_source_5k := $scr.Get "smugmug_url" }}
+
 {{ $image_source_x1 := $image_source_xl }}
-{{ $image_source_x2 := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "X2" .Params.photo.image_base "X2") }}
-{{ $image_source_x3 := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "X3" .Params.photo.image_base "X3") }}
-{{ $image_source_x4 := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "X4" .Params.photo.image_base "X4") }}
-{{ $image_source_x5 := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "X5" .Params.photo.image_base "X5") }}
-{{ $image_source_4k := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "4k" .Params.photo.image_base "4k") }}
-{{ $image_source_5k := (printf "%s/%s/%s/%s/%s-%s.jpg" .Params.photo.gallery .Params.photo.image_key .Params.photo.version "5k" .Params.photo.image_base "5k") }}
+
 
       <div class="container">
         <div class="row">
