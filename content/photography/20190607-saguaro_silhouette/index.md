@@ -24,7 +24,8 @@ image:
 photo:
   # sources: "smugmug"
   source: "smugmug"
-  gallery: "https://photos.smugmug.com/Galleries/Southern-Arizona"
+  base_url: "https://photos.smugmug.com"
+  gallery: "Galleries/Southern-Arizona"
   image_key: "i-qHJdRLb"
   version: "100"
   image_base: "DSC_0027-ps2"

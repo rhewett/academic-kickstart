@@ -24,7 +24,8 @@ image:
 photo:
   # sources: "smugmug"
   source: "smugmug"
-  gallery: "https://photos.smugmug.com/Galleries/Florida"
+  base_url: "https://photos.smugmug.com"
+  gallery: "Galleries/Florida"
   image_key: "i-qhTX8Wz"
   version: "100"
   image_base: "[Group-2]-DSC_2930_DSC_2933-4-images"

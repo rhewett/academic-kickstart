@@ -24,7 +24,8 @@ image:
 photo:
   # sources: "smugmug"
   source: "smugmug"
-  gallery: "https://photos.smugmug.com/Galleries/Yellowstone-National-Park"
+  base_url: "https://photos.smugmug.com"
+  gallery: "Galleries/Yellowstone-National-Park"
   image_key: "i-QD4R7z8"
   version: "100"
   image_base: "20120817_140549_D70_0011"
