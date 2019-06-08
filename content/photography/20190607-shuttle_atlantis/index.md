@@ -27,7 +27,7 @@ photo:
   gallery: "https://photos.smugmug.com/Galleries/Florida"
   image_key: "i-qhTX8Wz"
   version: "100"
-  image_base: "[Group 2]-DSC_2930_DSC_2933-4 images"
+  image_base: "[Group-2]-DSC_2930_DSC_2933-4-images"
   preview_size: "M"
   meta:
     location: "Kennedy Space Center, Florida, USA"
