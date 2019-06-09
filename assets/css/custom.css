@@ -197,7 +197,7 @@ p {
 
     .main-wrapper{
       background-color: white;
-      padding-left: 15px;
+      /*padding-left: 15px;*/
     }
 
 /* Small devices (landscape phones, 576px and up) */
@@ -525,4 +525,10 @@ p {
 
 .universal-wrapper {
   width: inherit;
+}
+
+
+.card-simple {
+  padding-left: 20px;
+  padding-right: 20px;
 }
