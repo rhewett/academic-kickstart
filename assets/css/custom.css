@@ -100,10 +100,10 @@ p {
       height: 75px;
     }
 
-    .show{
+    .show ul{
       position: relative;
       top: 0px;
-      padding-right: 100vw;
+      width: 100vw;
     }
 
     .navbar-collapse{
