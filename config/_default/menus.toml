@@ -22,3 +22,8 @@
   name = "blog/"
   url = "blog/"
   weight = 30
+
+[[main]]
+  name = "map/"
+  url = "#parksmap"
+  weight = 40

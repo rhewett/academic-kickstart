@@ -13,11 +13,24 @@ math = true
   subtext1 = "computational scientist"
   subtext2 = "blacksburg, va"
 
-#  [[sidebar.links]]
-#  name = "Natl Park Visits"
-#  url = "#parksmap"
+[[sidebar.links]]
+name = "About"
+url = "#bio"
 
-#  [[sidebar.links]]
-#  name = "Recent Posts"
-#  url = "#posts"
+[[sidebar.links]]
+name = "National Park Visits"
+url = "#parksmap"
+
+[[sidebar.links]]
+name = "Recent Photos"
+url = "#featured_photos"
+
+[[sidebar.links]]
+name = "Recent Posts"
+url = "#blog"
+
+[[sidebar.links]]
+name = "Recent Publications"
+url = "#featured_publications"
+
 +++

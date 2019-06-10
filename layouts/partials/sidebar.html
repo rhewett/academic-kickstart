@@ -10,8 +10,17 @@
   <div class="author-urls-wrapper">
     <ul class="author-urls social-icons" aria-hidden="true">
       {{ range $i, $e := $page.Params.sidebar.links}}
-      <li>
-        <a href="{{ .url | relLangURL }}" data-target="{{ .URL }}" {{ ($.Scratch.Get "target") | safeHTMLAttr }}>
+
+        {{/* Set target for link. */}}
+        {{ $.Scratch.Set "target" "" }}
+        {{ if gt (len .url) 4 }}
+          {{ if eq "http" (slicestr .url 0 4) }}
+            {{ $.Scratch.Set "target" " target=\"_blank\" rel=\"noopener\"" }}
+          {{ end }}
+        {{ end }}
+
+      <li class="sidebar-item">
+        <a class="sidebar-link" href="{{ .url | relLangURL }}" data-target="{{ .url }}" {{ ($.Scratch.Get "target") | safeHTMLAttr }}>
           {{ .Pre }}
           <span>{{ .name | safeHTML }}</span>
           {{ .Post }}

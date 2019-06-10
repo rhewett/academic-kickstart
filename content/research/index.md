@@ -10,4 +10,24 @@ header_image = "https://photos.smugmug.com/Galleries/Texas/i-Ssv4ZKZ/0/b0111b24/
   text = "russell j. hewett"
   subtext1 = "assistant professor"
   subtext2 = "mathematics & CMDA"
+
+[[sidebar.links]]
+name = "Top"
+url = "research/#hero"
+
+[[sidebar.links]]
+name = "Featured Publications"
+url = "research/#featured_publications"
+
+[[sidebar.links]]
+name = "All Publications"
+url = "/publication"
+
+[[sidebar.links]]
+name = "Projects"
+url = "research/#projects"
+
+[[sidebar.links]]
+name = "Talks"
+url = "research/#talks"
 +++
