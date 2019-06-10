@@ -48,7 +48,7 @@ subtitle = ""
 
 [map]
 
-  inline_source = "//www.arcgis.com/apps/Embed/index.html?webmap=12e3b9ea23da4ce9a6a24b4a6306555a&amp;extent=-128.4971,22.6261,-63.5898,52.2627&amp;zoom=true&amp;previewImage=false&amp;scale=true&amp;basemap_gallery=true&amp;disable_scroll=false&amp;theme=light"
+  inline_source = "//www.arcgis.com/apps/Embed/index.html?webmap=12e3b9ea23da4ce9a6a24b4a6306555a&extent=-128.4971,22.6261,-63.5898,52.2627&zoom=true&previewImage=false&scale=true&basemap_gallery=true&disable_scroll=false&theme=light"
 
   lightbox_source = "https://www.arcgis.com/apps/View/index.html?appid=f621cf0b221b432d811f7462f0b22678"
   lightbox_button_tex = "Embiggen!"
