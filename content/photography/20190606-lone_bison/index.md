@@ -7,7 +7,7 @@ summary: "What happens when you see your first bison in Yellowstone NP?"
 authors: [rjh]
 
 tag_taxonomy: "photos"
-photos: ["yellowstone", "landscape"]
+photos: ["yellowstone", "landscape", "aspect: landscape"]
 
 tags: []
 categories: []
@@ -41,7 +41,14 @@ profile: true
 
 ---
 
-Integer dolor mi, fringilla vitae elit id, pulvinar dapibus felis. Etiam accumsan fringilla convallis. Mauris eu eros cursus diam egestas ullamcorper nec eu justo. Morbi non sem molestie, consectetur augue egestas, tristique felis. Ut vulputate eros a diam fringilla, vel sodales diam placerat. Nam nec consectetur urna. Nullam hendrerit blandit mauris, ut consequat tortor faucibus scelerisque. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.
+A lone bison in a meadow, Yellowstone National Park.
 
+We were barely in the park, on the first day of our first visit, when we saw a lone bison far into this meadow.  It must have been 500-1000 yards away from the road, but it was fascinating to watch.  We were simply in awe (and completely unprepared for the volume of bison we were to encounter over the week).
+
+I probably took 100 photos of this particular bison, walking up the creek bank.  I must offer a very late apology to the priest who was fly fishing in the creek here.  We probably disturbed him, but it certainly was not our intention.
+
+At this time, I always took too many photos of the same scene.  Now I am much better at being careful to compose shots.  Of all of the similar shots, I liked this one the best.
+
+I find that it has an almost postcard quality, with well-placed foreground and background objects, a nice color gradation, with an over-all soft feel.  It has printed well for me!
 
 -rjh

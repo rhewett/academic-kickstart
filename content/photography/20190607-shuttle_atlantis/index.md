@@ -7,7 +7,7 @@ summary: "An indoor panorama of the Space Shuttle Atlantis, on display at Kenned
 authors: [rjh]
 
 tag_taxonomy: "photos"
-photos: ["florida", "panorama"]
+photos: ["florida", "panorama", "aspect: landscape"]
 
 tags: []
 categories: []
@@ -41,6 +41,14 @@ profile: true
 
 ---
 
-From X images.
+This is an indoor panorama I took during a 2016 visit to the Kennedy Space Center.  This was a special trip for us as it was our last family trip to New Smyrna beach and the condo there, before the timeshare was sold.  My wife had never been to KSC, so we made a point to visit.  I had not been since the retirement of the shuttles, so seeing Atlantis up front and center was awe inspiring.  Space exploration, both manned and scientific, has always struck me deep in my core, and being in the presence of Atlantis left me without words.
+
+The spacecraft was so large and you are so close to it that it is nearly impossible to capture the whole thing in one frame.  I used my wide-angle lens (I think, according to the EXIF at least) to take a four-frame panorama of Atlantis.  The shuttle is so well lit that I don't recall needing a faster lens.
+
+This panorama was stitched in Autopano Giga.  Due to the lens distortion and the changes in depth in the subject, the projection of the shuttle was borderline goofy.  To get straight lines in along the payload bay and to have a nose that is not bent, I had to do a lot of work manually tweaking the projection.  I don't remember too many specific details of this.
+
+I love the lighting on the spacecraft, the background lighting from the exhibit, and the additional depth that the Canadarm gives, coming almost straight at the camera.
+
+This photo has printed fantastically on metallic paper.  I've framed two copies of it in handmade walnut frames.
 
 -rjh
