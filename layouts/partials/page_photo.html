@@ -42,6 +42,8 @@
 
 {{ $image_source_x1 := $image_source_xl }}
 
+{{ partial "functions/build_smugmug_lightbox_url" (dict "context" . "photo" .Params.photo ) }}
+{{ $smugmug_lightbox_url := $scr.Get "smugmug_url" }}
 
       <div class="container">
         <div class="row">
@@ -64,6 +66,22 @@
 <!--             <div class="page-photo-author">
               {{ lower $author }} | {{ lower site.Title }}
             </div> -->
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 center-text photo-page-buttons">
+          <a role="button" class="btn btn-outline-primary btn-lg" data-fancybox="images" data-srcset="
+                {{ $image_source_x5 }} 2560w,
+                {{ $image_source_x4 }} 2048w,
+                {{ $image_source_x3 }} 1600w,
+                {{ $image_source_x2 }} 1280w,
+                {{ $image_source_x1 }} 1024w,
+                {{ $image_source_l }} 800w,
+                {{ $image_source_m }} 600w,
+                {{ $image_source_s }} 400w,
+                {{ $image_source_th }} 150w"
+                href="javascript:;">Enhance!</a>
+          <a role="button" class="btn btn-outline-primary btn-lg" href="{{ $smugmug_lightbox_url | urlize }}">View on Smugmug</a>
           </div>
         </div>
       </div>
