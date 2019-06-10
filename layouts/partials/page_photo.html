@@ -48,7 +48,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="img-fluid page-photo-container">
+            <div class="img-fluid page-photo-container {{ if eq .Params.photo.render.border 1 }}photo-border-light{{ else }}photo-border-dark{{ end}}">
               <a data-fancybox="images" data-srcset="
                 {{ $image_source_x5 }} 2560w,
                 {{ $image_source_x4 }} 2048w,

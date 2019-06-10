@@ -60,7 +60,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="img-fluid photo-card-preview-container">
+        <div class="img-fluid photo-card-preview-container {{ if eq $item.Params.photo.render.border 1 }}photo-border-light{{ else }}photo-border-dark{{ end}}">
         <a href="{{ $item.RelPermalink }}">
             <img src="{{ $image_url }}" class="photo-card-preview" itemprop="image" alt="">
         </a>

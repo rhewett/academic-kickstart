@@ -497,12 +497,26 @@ p {
   background-color: #1D1D1D;
   padding: 10px;
   padding: 0px;
-  box-shadow: 0px 0px 6px 3px rgba(0,0,0,.5);
+  /*box-shadow: 0px 0px 6px 3px rgba(0,0,0,.5);*/
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
   margin-bottom: 15px;
   display: block;
+}
+
+.photo-border-light a[data-fancybox] img,
+.photo-border-light a img{
+  background-color: #fff;
+  box-shadow: 0 1px 4px rgba(0,0,0,.5);
+  border: 1px solid rgba(0,0,0,0);
+}
+
+.photo-border-dark  a[data-fancybox] img,
+.photo-border-dark  a img{
+  background-color: #000;
+  box-shadow: 0 1px 4px rgba(0,0,0,.5);
+  border: 1px solid rgba(0,0,0,0);
 }
 
 .photo-card-preview-container {

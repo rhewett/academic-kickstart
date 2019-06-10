@@ -36,6 +36,9 @@ photo:
     photographer: "Russell J. Hewett"
     caption: ""
     date: "2012-08-17"
+  render:
+    # 0 = none; 1 = light; 2 = dark;
+    border: 2
 
 profile: true
 
