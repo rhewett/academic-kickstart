@@ -19,8 +19,8 @@ copyright = "&copy; Russell J. Hewett - {year}"
 googleAnalytics = ""
 
 # Enable comments by entering your Disqus shortname
-disqusShortname = ""
-# disqusShortname = "rjh-io"
+# disqusShortname = ""
+disqusShortname = "rjh-io"
 
 ############################
 ## Advanced options below ##
