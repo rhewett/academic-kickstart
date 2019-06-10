@@ -535,3 +535,26 @@ p {
 .photo-page-buttons {
   margin-bottom: 15px;
 }
+
+
+.article-style p a {
+  text-decoration: underline;
+}
+
+ul.ul-edu li{
+  padding-right: 0;
+}
+
+.split-header-image {
+  height: 100%;
+}
+
+.split-header-image img {
+  margin-top: auto;
+  margin-bottom: auto;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
