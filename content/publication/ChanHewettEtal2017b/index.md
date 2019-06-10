@@ -3,10 +3,10 @@
 
 math: true
 
-title: "Weight-adjusted discontinuous Galerkin methods: wave propagation in heterogeneous media"
+title: "Weight-adjusted discontinuous Galerkin methods: curvilinear meshes"
 authors: ["Jesse Chan", rjh, "T. Warburton"]
 date: 2017-12-12
-doi: "10.1137/16M1089186"
+doi: "10.1137/16M1089198"
 
 # Schedule page publish date (NOT publication's date).
 publishDate: 2019-05-31T14:53:55-04:00
@@ -21,7 +21,7 @@ publication_types: ["2"]
 publication: "SIAM Journal on Scientific Computing"
 publication_short: "SISC"
 
-abstract: "Time-domain discontinuous Galerkin (DG) methods for wave propagation require accounting for the inversion of dense elemental mass matrices, where each mass matrix is computed with respect to a parameter-weighted $L^2$ inner product. In applications where the wavespeed varies spatially at a subelement scale, these matrices are distinct over each element, necessitating additional storage. In this work, we propose a weight-adjusted DG (WADG) method that reduces storage costs by replacing the weighted $L^2$ inner product with a weight-adjusted inner product. This equivalent inner product results in an energy-stable method but does not increase storage costs for locally varying weights. A priori error estimates are derived, and numerical examples are given illustrating the application of this method to the acoustic wave equation with heterogeneous wavespeed."
+abstract: "Traditional time-domain discontinuous Galerkin (DG) methods result in large storage costs at high orders of approximation due to the storage of dense elemental matrices. In this companion paper to [Weight-adjusted discontinuous Galerkin methods: wave propagation in heterogeneous media](/publication/chanhewettetal2017a/), we propose weight-adjusted DG (WADG) methods for curvilinear meshes which reduce storage costs while retaining energy stability. A priori error estimates show that high order accuracy is preserved under sufficient conditions on the mesh, which are illustrated through convergence tests with different sequences of meshes. Numerical and computational experiments verify the accuracy and performance of WADG for a model problem on curved domains."
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -40,15 +40,15 @@ featured: false
 
 links:
 - name: arXiv
-  url: https://arxiv.org/abs/1608.01944
+  url: https://arxiv.org/abs/1608.03836
   icon_pack: ai
   icon: arxiv
 - name: scholar
-  url: https://scholar.google.com/scholar?cluster=7001027900360161740
+  url: https://scholar.google.com/scholar?cluster=17076219506620508063
   icon_pack: ai
   icon: google-scholar
 
-url_pdf: "https://epubs.siam.org/doi/pdf/10.1137/16M1089186"
+url_pdf: "https://epubs.siam.org/doi/pdf/10.1137/16M1089198"
 url_code:
 url_dataset:
 url_poster:
