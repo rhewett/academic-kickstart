@@ -111,10 +111,10 @@ p {
     }
 
     .navbar-light .navbar-nav>.nav-item>.nav-link,
-    .navbar-light .navbar-nav>.nav-item>.nav-link a,
-    .navbar-light .navbar-nav>.nav-item>.nav-link a:active,
-    .navbar-light .navbar-nav>.nav-item>.nav-link a:hover,
-    .navbar-light .navbar-nav>.nav-item>.nav-link a:visited{
+    .navbar-light .navbar-nav>.nav-item>.nav-link,
+    .navbar-light .navbar-nav>.nav-item>.nav-link:active,
+    .navbar-light .navbar-nav>.nav-item>.nav-link:hover,
+    .navbar-light .navbar-nav>.nav-item>.nav-link:visited{
       font-family: 'Chakra Petch', sans-serif;
       font-size: 1.35rem;
       padding-left: 0.5rem;
