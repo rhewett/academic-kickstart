@@ -576,3 +576,9 @@ ul.ul-edu li{
   right: 0;
   bottom: 0;
 }
+
+.img-fluid.publication-feature-img img{
+  max-height: 40vh;
+  margin-left: auto;
+  margin-right: auto;
+}

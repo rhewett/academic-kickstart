@@ -30,50 +30,35 @@
 
 {{/* Featured image */}}
 {{ if and $featured (not .Params.image.preview_only) }}
-{{ $image := $featured.Resize "800x" }}
-<div class="article-header d-xl-none">
-  <div class="featured-image" style="background-image: url('{{ $image.RelPermalink }}');"></div>
-  {{ with $.Params.image.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
-</div>
+{{ $image := $featured }}
 
 {{/* $image := $featured.Fill (printf "680x500 q90 %s" $anchor) */}}
-{{ $image := $featured }}
-<div class="container-fluid split-header d-none d-xl-block">
+<div class="container-fluid">
   <div class="row">
-    <div class="col-6">
-      <div class="split-header-content">
-        <h1 itemprop="name">{{ $title }}</h1>
-
-        {{ with $page.Params.subtitle }}
-        <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
-        {{end}}
-
-        {{ partial "page_metadata" (dict "page" $page "is_list" 0) }}
-
-        {{ partial "page_links_div.html" $page }}
-
-        {{ partial "share.html" $page }}
-      </div>
-    </div>
-    <div class="col-6">
-      <div class="split-header-image">
+    <div class="col">
+      <div class="img-fluid publication-feature-img">
         <img src="{{ $image.RelPermalink }}" itemprop="image" alt="">
         {{ with $.Params.image.caption }}<span class="article-header-caption">{{ . | markdownify | emojify }}</span>{{ end }}
       </div>
     </div>
   </div>
+  <div class="row">
+    <div class="col">
+      <h1 itemprop="name">{{ $title }}</h1>
+
+      {{ with $page.Params.subtitle }}
+      <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
+      {{end}}
+
+      {{ partial "page_metadata" (dict "page" $page "is_list" 0) }}
+
+      {{ partial "page_links_div.html" $page }}
+
+      {{ partial "share.html" $page }}
+    </div>
+  </div>
 </div>
 
-<div class="article-container d-xl-none">
-  <h1 itemprop="name">{{ $title }}</h1>
-
-  {{ with $page.Params.subtitle }}
-  <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
-  {{end}}
-
-  {{ partial "page_metadata" (dict "page" $page "is_list" 0 "share" true) }}
-  {{ partial "page_links_div.html" $page }}
-</div>
 {{else}}
   {{/* Case when page has no image */}}
 
