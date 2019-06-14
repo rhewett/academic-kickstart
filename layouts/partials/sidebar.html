@@ -6,10 +6,19 @@
 {{ end }}
 {{ $page := site.GetPage $page_path }}
 
+{{ $links := slice }}
+{{ if $page.Params.sidebar.links }}
+{{   $links = $page.Params.sidebar.links }}
+{{ else if $page.Parent }}
+  {{if $page.Parent.Params.sidebar.links }}
+    {{ $links = $page.Parent.Params.sidebar.links }}
+  {{ end }}
+{{ end }}
+
   {{ partial "author_block.html" . }}
   <div class="author-urls-wrapper">
     <ul class="author-urls social-icons" aria-hidden="true">
-      {{ range $i, $e := $page.Params.sidebar.links}}
+      {{ range $i, $e := $links }}
 
         {{/* Set target for link. */}}
         {{ $.Scratch.Set "target" "" }}
