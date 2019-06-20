@@ -1,0 +1,81 @@
+{{/* image_smugmug base_url="" image_key="" version="" image_base="" */}}
+
+{{ $image_src := .Get "src" }}
+
+{{ $base_url := .Get "base_url" }}
+{{ $image_key := .Get "image_key" }}
+{{ $version := .Get "version" }}
+{{ $image_base := .Get "image_base" }}
+
+{{ $display_thumb := eq (.Get "display_thumb" | default "false") "true" }}
+
+{{ $lightbox := eq (.Get "lightbox" | default "true") "true" }}
+{{ $class := "smugmug-image"}}
+{{ with .Parent }}
+  {{ $class = (printf "%s%s" (.Get "class") "-image") }}
+{{ end }}
+{{ $lightbox_group := .Get "lightbox-group" | default $class }}
+
+{{ $alt_text := "" }}
+{{ if .Get "alt" }}
+  {{ $alt_text = .Get "alt" }}
+{{ else if .Get "caption" }}
+  {{ $alt_text = .Get "caption" }}
+{{ end }}
+
+{{ $width := .Get "width" | default "" }}
+{{ $height := .Get "height" | default "" }}
+
+{{ $caption_title := (.Get "title" | default "" ) | markdownify | emojify }}
+{{ $caption_text := (.Get "caption" | default "" ) | markdownify | emojify }}
+
+{{ $image_src_th := (printf "%s/%s/%s/%s/%s-%s.jpg" $base_url $image_key $version "Th" $image_base "Th") }}
+{{ $image_src_s  := (printf "%s/%s/%s/%s/%s-%s.jpg" $base_url $image_key $version "S" $image_base  "S" ) }}
+{{ $image_src_m  := (printf "%s/%s/%s/%s/%s-%s.jpg" $base_url $image_key $version "M" $image_base  "M" ) }}
+{{ $image_src_l  := (printf "%s/%s/%s/%s/%s-%s.jpg" $base_url $image_key $version "L" $image_base  "L" ) }}
+{{ $image_src_xl := (printf "%s/%s/%s/%s/%s-%s.jpg" $base_url $image_key $version "XL" $image_base "XL") }}
+{{ $image_src_x2 := (printf "%s/%s/%s/%s/%s-%s.jpg" $base_url $image_key $version "X2" $image_base "X2") }}
+{{ $image_src_x3 := (printf "%s/%s/%s/%s/%s-%s.jpg" $base_url $image_key $version "X3" $image_base "X3") }}
+{{ $image_src_x4 := (printf "%s/%s/%s/%s/%s-%s.jpg" $base_url $image_key $version "X4" $image_base "X4") }}
+{{ $image_src_x5 := (printf "%s/%s/%s/%s/%s-%s.jpg" $base_url $image_key $version "X5" $image_base "X5") }}
+
+{{ $image_src_display := $image_src_xl }}
+{{ if $display_thumb }}{{ $image_src_display = $image_src_th }}{{ end }}
+
+<figure class="{{ $class }}">
+  {{ if $lightbox }}
+  	<a data-fancybox="{{ $lightbox_group }}"
+  	   data-srcset="
+                {{ $image_src_x5 }} 2560w,
+                {{ $image_src_x4 }} 2048w,
+                {{ $image_src_x3 }} 1600w,
+                {{ $image_src_x2 }} 1280w,
+                {{ $image_src_xl }} 1024w,
+                {{ $image_src_l }} 800w,
+                {{ $image_src_m }} 600w,
+                {{ $image_src_s }} 400w,
+                {{ $image_src_th }} 150w"
+	   href="{{ $image_src_display }}"
+       {{ with .Get "caption" }}data-caption="{{ . | markdownify | emojify }}"{{ end }}>
+  {{ end }}
+    <picture>
+    {{ if not $display_thumb }}
+	  <source media="(min-width: 2560px)" srcset="{{ $image_src_x5 }}">
+	  <source media="(min-width: 2048px)" srcset="{{ $image_src_x4 }}">
+	  <source media="(min-width: 1600px)" srcset="{{ $image_src_x3 }}">
+	  <source media="(min-width: 1200px)" srcset="{{ $image_src_x2 }}">
+	  <source media="(min-width: 768px)" srcset="{{ $image_src_xl }}">
+	  <source media="(min-width: 576px)"    srcset="{{ $image_src_l }}">
+	  <source media="(max-width: 575.98px)" srcset="{{ $image_src_m }}">
+	  <source media="(min-width: 400px)" srcset="{{ $image_src_s }}">
+	 {{ end }}
+      <img src="{{ $image_src_display }}" alt="{{ $alt_text }}" width="{{ $width }}" height="{{ $height }}">
+    </picture>
+  {{ if $lightbox }}</a>{{ end }}
+  {{ if or $caption_title $caption_text }}
+  <figcaption>
+    {{ with $caption_title }}<h4>{{ . }}</h4>{{ end }}
+    {{ with $caption_text }}<p>{{ . }}</p>{{ end }}
+  </figcaption>
+  {{ end }}
+</figure>

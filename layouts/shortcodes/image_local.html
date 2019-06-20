@@ -1,0 +1,35 @@
+{{ $image_src := .Get "src" }}
+{{ $lightbox := eq (.Get "lightbox" | default "true") "true" }}
+{{ $class := "local-image"}}
+{{ with .Parent }}
+  {{ $class = (printf "%s%s" (.Get "class") "-image") }}
+{{ end }}
+{{ $lightbox_group := .Get "lightbox-group" | default $class }}
+
+{{ $alt_text := "" }}
+{{ if .Get "alt" }}
+  {{ $alt_text = .Get "alt" }}
+{{ else if .Get "caption" }}
+  {{ $alt_text = .Get "caption" }}
+{{ end }}
+
+{{ $width := .Get "width" | default "" }}
+{{ $height := .Get "height" | default "" }}
+
+{{ $caption_title := (.Get "title" | default "" ) | markdownify | emojify }}
+{{ $caption_text := (.Get "caption" | default "" ) | markdownify | emojify }}
+
+<figure class="{{ $class }}">
+  {{ if $lightbox }}<a data-fancybox="{{ $lightbox_group }}" href="{{ $image_src }}" {{ with .Get "caption" }}data-caption="{{ . | markdownify | emojify }}"{{ end }}>{{ end }}
+    <picture>
+      <!-- <source media="" srcset=""> -->
+      <img src="{{ $image_src }}" alt="{{ $alt_text }}" width="{{ $width }}" height="{{ $height }}">
+    </picture>
+  {{ if $lightbox }}</a>{{ end }}
+  {{ if or $caption_title $caption_text }}
+  <figcaption>
+    {{ with $caption_title }}<h4>{{ . }}</h4>{{ end }}
+    {{ with $caption_text }}<p>{{ . }}</p>{{ end }}
+  </figcaption>
+  {{ end }}
+</figure>
