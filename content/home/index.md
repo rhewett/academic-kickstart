@@ -11,7 +11,7 @@ math = true
   image = "/img/headshot_cascades.jpg"
   text = "russell j. hewett"
   subtext1 = "computational scientist"
-  subtext2 = "blacksburg, va"
+  subtext2 = "maker of things"
 
 [[sidebar.links]]
 name = "About"
@@ -30,7 +30,7 @@ name = "Recent Posts"
 url = "#blog"
 
 [[sidebar.links]]
-name = "Recent Publications"
-url = "#featured_publications"
+name = "Recent Diversions"
+url = "#featured_diversions"
 
 +++
