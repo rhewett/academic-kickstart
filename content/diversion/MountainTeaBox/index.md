@@ -12,8 +12,8 @@ photos: ["woodworking", "cherry", "walnut", "white ash", "box", "box joints"]
 tags: []
 categories: []
 
-date: 2019-06-07T13:14:53-04:00
-lastmod: 2019-06-07T13:14:53-04:00
+date: 2019-06-19T21:00:00-04:00
+lastmod: 2019-06-19T21:00:00-04:00
 
 featured: true
 draft: false

@@ -29,7 +29,7 @@ sidebar:
       url: '#featured_photos'
     - name: Recent Posts
       url: '#blog'
-    - name: Recent Publications
-      url: '#featured_publications'
+    - name: Recent Diversions
+      url: '#featured_diversions'
 
 ---
