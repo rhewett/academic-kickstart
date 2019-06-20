@@ -41,6 +41,10 @@
 {{ $profile_page := site.GetPage (printf "/%s/%s" $taxonomy $author_urlized) }}
 {{ $author := $profile_page.Params.name }}
 
+{{ $border_class := "" }}
+{{ if eq .Params.photo.render.border 1 }}{{ $border_class = "photo-border-light"}}{{ end }}
+{{ if eq .Params.photo.render.border 2 }}{{ $border_class = "photo-border-dark"}}{{ end }}
+
 <div class="card-simple" itemscope itemtype="http://schema.org/{{$microdata_type}}">
 
   <h3 class="article-title mb-1 mt-3" itemprop="name">
@@ -60,7 +64,7 @@
   <div class="container">
     <div class="row">
       <div class="col-12">
-        <div class="img-fluid photo-card-preview-container {{ if eq $item.Params.photo.render.border 1 }}photo-border-light{{ else }}photo-border-dark{{ end}}">
+        <div class="img-fluid photo-card-preview-container {{ $border_class }}">
         <a href="{{ $item.RelPermalink }}">
             <img src="{{ $image_url }}" class="photo-card-preview" itemprop="image" alt="">
         </a>
