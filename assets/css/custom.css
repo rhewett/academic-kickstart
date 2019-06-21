@@ -604,3 +604,12 @@ figure.img-fluid a[data-fancybox] img{
   max-width: 250px;
   max-width: 32%;
 }
+
+.media.stream-item{
+  margin-bottom: 20px;
+}
+
+article .article-metadata{
+  line-height: unset;
+  margin-bottom: unset;
+}
