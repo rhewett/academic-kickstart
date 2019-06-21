@@ -50,7 +50,7 @@
       <p class="page-subtitle">{{ . | markdownify | emojify }}</p>
       {{end}}
 
-      {{ partial "page_metadata" (dict "page" $page "is_list" 0) }}
+      {{ partial "page_metadata" (dict "page" $page "is_list" 1) }}
 
       {{ partial "page_links_div.html" $page }}
 
@@ -75,7 +75,7 @@
   {{end}}
 
   {{ if not .IsNode }}
-    {{ partial "page_metadata" (dict "page" $page "is_list" 0 "share" true) }}
+    {{ partial "page_metadata" (dict "page" $page "is_list" 1 "share" true) }}
     {{ partial "page_links_div.html" $page }}
   {{end}}
 </div>
