@@ -5,7 +5,7 @@ math: true
 
 title: "Solar Activity Monitoring"
 authors: [Peter T. Gallagher, R. T James McAteer, C. Alex Young, Jack Ireland, rjh, Paul Conlon]
-date: 2007
+date: 2007-01-01
 doi: "110.1007/1-4020-5446-7"
 
 # Schedule page publish date (NOT publication's date).

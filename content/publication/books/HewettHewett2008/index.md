@@ -5,7 +5,7 @@ math: false
 
 title: "Instant messaging (IM) literacy in the workplace"
 authors: [Beth L. Hewett, rjh]
-date: 2008
+date: 2008-01-01
 doi: "10.4018/978-1-59904-893-2.ch032"
 
 # Schedule page publish date (NOT publication's date).

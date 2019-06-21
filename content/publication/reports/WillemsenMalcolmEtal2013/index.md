@@ -5,7 +5,7 @@ math: true
 
 title: "Efficient stochastic Hessian estimation for full waveform inversion"
 authors: [Lucas Abraham Willemsen, Alison E. Malcolm, rjh]
-date: 2013
+date: 2013-01-01
 doi: ""
 
 # Schedule page publish date (NOT publication's date).
