@@ -60,14 +60,13 @@
   {{ end }}
     <picture>
     {{ if not $display_thumb }}
-	  <source media="(min-width: 2560px)" srcset="{{ $image_src_x5 }}">
-	  <source media="(min-width: 2048px)" srcset="{{ $image_src_x4 }}">
-	  <source media="(min-width: 1600px)" srcset="{{ $image_src_x3 }}">
-	  <source media="(min-width: 1200px)" srcset="{{ $image_src_x2 }}">
-	  <source media="(min-width: 768px)" srcset="{{ $image_src_xl }}">
+	  <source media="(min-width: 2560px)"   srcset="{{ $image_src_x5 }}">
+	  <source media="(min-width: 2048px)"   srcset="{{ $image_src_x4 }}">
+	  <source media="(min-width: 1600px)"   srcset="{{ $image_src_x3 }}">
+	  <source media="(min-width: 1200px)"   srcset="{{ $image_src_x2 }}">
+	  <source media="(min-width: 768px)"    srcset="{{ $image_src_xl }}">
 	  <source media="(min-width: 576px)"    srcset="{{ $image_src_l }}">
 	  <source media="(max-width: 575.98px)" srcset="{{ $image_src_m }}">
-	  <source media="(min-width: 400px)" srcset="{{ $image_src_s }}">
 	 {{ end }}
       <img src="{{ $image_src_display }}" alt="{{ $alt_text }}" width="{{ $width }}" height="{{ $height }}">
     </picture>
