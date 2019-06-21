@@ -19,7 +19,7 @@ publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
 publication: "IEEE Transactions on Signal Processing"
-publication_short: ""
+publication_short: "IEEE TSP"
 
 abstract: "We present a robust null space method for linear equality constrained state space estimation. Exploiting a degeneracy in the estimator statistics, an orthogonal factorization is used to decompose the problem into stochastic and deterministic components, which are then solved separately. The resulting dimension reduction algorithm has enhanced numerical stability, solves the constrained problem completely, and can reduce computational load by reducing the problem size. The new method addresses deficiencies in commonly used pseudo-observation or projection methods, which either do not solve the constrained problem completely or have unstable numerical implementations, due in part to the degeneracy in the estimator statistics. We present a numerical example demonstrating the effectiveness of the new method compared to other current methods."
 

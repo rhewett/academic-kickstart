@@ -19,7 +19,7 @@ publication_types: ["4"]
 
 # Publication name and optional abbreviated publication name.
 publication: "Earth Resources Laboratory Industry Consortia Annual Report; 2013-34"
-publication_short: ""
+publication_short: "ERL Annual Report 2013"
 
 abstract: "In this abstract we present a method that allows arbitrary elements of the approximate Hessian to be estimated simultaneously. Preliminary theoretical and numerical investigations suggest that the number of forward models required for this procedure does not increase with the number of shots. As the number of shots increases this means that the cost of estimating these approximate Hessian entries becomes negligible relative to the cost of calculating the gradient. The most obvious application would be to estimate the diagonal of the approximate hessian. This can then be used as a very inexpensive preconditioner for optimization procedures, such as the truncated Newton method."
 

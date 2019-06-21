@@ -19,7 +19,7 @@ publication_types: ["7"]
 
 # Publication name and optional abbreviated publication name.
 publication: "University of Illinois at Urbana-Champaign"
-publication_short: "UIUC"
+publication_short: "Doctoral Thesis"
 
 abstract: "In this thesis, we propose several advances in the numerical and computational algorithms that are used to determine tomographic estimates of physical parameters in the solar corona. We focus on methods for both global dynamic estimation of the coronal electron density and estimation of local transient phenomena, such as coronal mass ejections, from empirical observations acquired by instruments onboard the STEREO spacecraft. We present a first look at tomographic reconstructions of the solar corona from multiple points-of-view, which motivates the developments in this thesis. In particular, we propose a method for linear equality constrained state estimation that leads toward more physical global dynamic solar tomography estimates. We also present a formulation of the local static estimation problem, i.e., the tomographic estimation of local events and structures like coronal mass ejections, that couples the tomographic imaging problem to a phase field based level set method. This formulation will render feasible the 3D tomography of coronal mass ejections from limited observations. Finally, we develop a scalable algorithm for ray tracing dense meshes, which allows efficient computation of many of the tomographic projection matrices needed for the applications in this thesis."
 
