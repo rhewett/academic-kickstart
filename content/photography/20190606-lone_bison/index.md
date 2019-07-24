@@ -7,7 +7,7 @@ summary: "What happens when you see your first bison in Yellowstone NP?"
 authors: [rjh]
 
 tag_taxonomy: "photos"
-photos: ["yellowstone", "landscape", "aspect: landscape"]
+photos: ["yellowstone", "landscape", "aspect: landscape", "national park"]
 
 tags: []
 categories: []

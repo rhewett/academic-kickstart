@@ -7,7 +7,7 @@ summary: "Sunset over Tucson, as viewed by a saguaro cactus."
 authors: [rjh]
 
 tag_taxonomy: "photos"
-photos: ["arizona", "saguaro", "mt. lemmon", "sunset", "landscape", "aspect: portrait"]
+photos: ["arizona", "saguaro", "mt. lemmon", "sunset", "landscape", "aspect: portrait", "national forest"]
 
 tags: []
 categories: []
