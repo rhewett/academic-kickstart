@@ -4,7 +4,7 @@
 math: true
 
 title: "L-Sweeps: A scalable, parallel preconditioner for the high-frequency Helmholtz equation"
-authors: [MatThias Taus, Leonardo Zepeda-Nunez, rjh, Laurent Demanet]
+authors: [Matthias Taus, Leonardo Zepeda-Nunez, rjh, Laurent Demanet]
 date: 2019-09-03
 doi: ""
 
