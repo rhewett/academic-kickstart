@@ -3,7 +3,7 @@
 
 math: true
 
-title: "Multifractal Properties of Evolving Active Regions"
+title: "A Survey of Computational Tools in Solar Physics"
 authors: [Monica G. Bobra, Stuart J. Mumford, rjh, Steven D. Christe, Kevin Reardon, Sabrina Savage, Jack Ireland, Tiago M. D. Pereira, Bin Chen, David Perez-Suarez]
 date: 2020-04-20
 doi: "article/10.1007/s11207-020-01622-2"
