@@ -559,6 +559,11 @@ p {
   text-decoration: underline;
 }
 
+.article-banner {
+  width: unset;
+  max-width: 100%;
+}
+
 ul.ul-edu li{
   padding-right: 0;
 }
