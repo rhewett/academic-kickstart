@@ -46,4 +46,4 @@ title = "Joining My Research Group"
 
 **Grad students:** Current VT MS and PhD students who are interested in working with me should contact me by e-mail to setup a meeting with me.  Prospective graduate students should also contact me to alert me to their application to VT.
 
-**Undergrads:** I occasionally have space for undergrad researchers.  I encourage CMDA students who want to do research with me to do well in CMDA 3634, with me (prefered) or with another instructor.
+**Undergrads:** I occasionally have space for undergrad researchers.  I encourage CMDA students who want to do research with me to do well in CMDA 3634, with me (preferred) or with another instructor.

@@ -20,6 +20,10 @@ name = "Featured Publications"
 url = "research/#featured_publications"
 
 [[sidebar.links]]
+name = "Research Group"
+url = "research/#research_group"
+
+[[sidebar.links]]
 name = "All Publications"
 url = "/publication"
 

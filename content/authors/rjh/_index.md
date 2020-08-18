@@ -11,6 +11,8 @@ superuser: true
 
 # Role/position
 role: computational scientist
+group_role: principle investigator
+group_role_weight: 0
 
 # Organizations/Affiliations
 organizations:
@@ -18,7 +20,7 @@ organizations:
   url: ""
 
 # Short bio (displayed in user profile at end of posts)
-bio: Boo boo ba doop
+bio: ""
 
 interests:
 - Inverse Problems & Deep Learning
@@ -68,7 +70,7 @@ email: "rjh@rjh.io"
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- "Principal Investigators"
+- "group members"
 
 ---
 

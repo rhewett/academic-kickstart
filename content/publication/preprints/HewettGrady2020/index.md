@@ -4,7 +4,7 @@
 math: true
 
 title: "A Linear Algebraic Approach to Model Parallelism in Deep Learning"
-authors: [rjh, Thomas Grady]
+authors: [rjh, thomasgrady]
 date: 2020-06-04
 doi: ""
 
