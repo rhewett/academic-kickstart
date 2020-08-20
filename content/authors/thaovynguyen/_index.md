@@ -23,7 +23,9 @@ organizations:
 bio: ""
 
 interests:
-#- ""
+- Deep learning
+- Computational Science
+- Geosciences
 
 education:
   courses:
@@ -45,9 +47,9 @@ social:
 #- icon: github
 #  icon_pack: fab
 #  link: https://github.com/rhewett
-#- icon: linkedin
-#  icon_pack: fab
-#  link: https://www.linkedin.com/in/rjh-123
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/thaovy-nguyen-956467125/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 #- icon: cv
@@ -66,3 +68,7 @@ avatar_bg_color: cornsilk
 
 ---
 
+I am a Masters student for the Department of Mathematics at Virginia Tech. My
+research interests are in modeling geosciences with deep learning and
+scientific computing. I completed my Undergraduate degree at Virginia Tech in
+Mathematics with a minor in Computer Science.
