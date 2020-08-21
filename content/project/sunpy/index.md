@@ -1,8 +1,8 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "SunPy"
-summary: "SunPy: Solar Data Analysis in Python"
+title: "Solar Data Analysis"
+summary: "Solar Data Analysis, often with Python and SunPy"
 authors: [rjh]
 tags: []
 categories: []
@@ -30,7 +30,7 @@ links:
  - name: sunpy.org
    url: "https://sunpy.org/"
 
-url_code: ""
+url_code: "https://github.com/sunpy"
 url_pdf: ""
 url_slides: ""
 url_video: ""

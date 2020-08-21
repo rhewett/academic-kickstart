@@ -225,3 +225,6 @@
 
 - id: pub_abstract
   translation: Indexed abstracts
+
+- id: pub_software_data
+  translation: Software & data artifacts

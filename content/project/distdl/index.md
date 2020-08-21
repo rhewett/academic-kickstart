@@ -1,9 +1,9 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Solar Tomography"
-summary: "Numerics and 3D reconstructions of the solar atmosphere"
-authors: [rjh, Mark D. Butala, Farzad Kamalabadi, Michael T. Heath, Ian Jermyn]
+title: "Distributed Deep Learning"
+summary: "DistDL, Model parallelism, software, and more"
+authors: [rjh, thomasgrady]
 tags: []
 categories: []
 date: 2019-05-31T16:03:01-04:00
@@ -27,7 +27,7 @@ image:
 #   icon_pack: fab
 #   icon: twitter
 
-url_code: ""
+url_code: "https://github.com/distdl"
 url_pdf: ""
 url_slides: ""
 url_video: ""

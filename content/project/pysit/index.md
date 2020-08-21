@@ -1,8 +1,8 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Pysit"
-summary: "PySIT: Python Seismic Imaging Toolbox"
+title: "Subsurface Imaging"
+summary: "PySIT, wave propagation, FWI, and more"
 authors: [rjh, Laurent Demanet]
 tags: []
 categories: []
@@ -27,7 +27,11 @@ image:
 #   icon_pack: fab
 #   icon: twitter
 
-url_code: ""
+links:
+ - name: sunpy.org
+   url: "https://pysit.org/"
+
+url_code: "https://github.com/pysit"
 url_pdf: ""
 url_slides: ""
 url_video: ""

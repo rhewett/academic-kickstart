@@ -3,13 +3,13 @@
 
 math: true
 
-title: "A robust null space method for linear equality constrained state estimation"
-authors: [rjh, Michael T. Heath, Mark D. Butala, Farzad Kamalabadi]
-date: 2010-04-22
-doi: "10.1109/TSP.2010.2048901"
+title: "The SunPy Project: Open Source Development and Status of the Version 1.0 Core Package"
+authors: [The SunPy Community, Will T. Barnes, Monica G. Bobra, Steven D. Christe, Nabil Freij, Laura A. Hayes, Jack Ireland, Stuart Mumford, David Perez-Suarez, Daniel F. Ryan, Albert Y. Shih, Prateek Chanda, Kolja Glogowski, rjh, V. Keith Hughitt, Andrew Hill, Kaustubh Hiware, Andrew Inglis, Michael S. F. Kirk, Sudarshan Konge, James Paul Mason, Shane Anthony Maloney, Sophie A. Murray, Asish Panda, Jongyeob Park, Tiago M. D. Pereira, Kevin Reardon, Sabrina Savage, Brigitta M. Sipőcz, David Stansby, Yash Jain, Garrison Taylor, Tannmay Yadav, Rajul, Trung Kien Dang]
+date: 2020-02-12
+doi: "10.3847/1538-4357/ab4f7a"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2019-05-31T14:53:55-04:00
+publishDate: 2020-08-01T00:00:00-04:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
@@ -18,17 +18,17 @@ publishDate: 2019-05-31T14:53:55-04:00
 publication_types: ["2"]
 
 # Publication name and optional abbreviated publication name.
-publication: "IEEE Transactions on Signal Processing"
-publication_short: "IEEE TSP"
+publication: "The Astrophysical Journal"
+publication_short: "ApJ"
 
-abstract: "We present a robust null space method for linear equality constrained state space estimation. Exploiting a degeneracy in the estimator statistics, an orthogonal factorization is used to decompose the problem into stochastic and deterministic components, which are then solved separately. The resulting dimension reduction algorithm has enhanced numerical stability, solves the constrained problem completely, and can reduce computational load by reducing the problem size. The new method addresses deficiencies in commonly used pseudo-observation or projection methods, which either do not solve the constrained problem completely or have unstable numerical implementations, due in part to the degeneracy in the estimator statistics. We present a numerical example demonstrating the effectiveness of the new method compared to other current methods."
+abstract: "The goal of the SunPy project is to facilitate and promote the use and development of community-led, free, and open source data analysis software for solar physics based on the scientific Python environment. The project achieves this goal by developing and maintaining the sunpy core package and supporting an ecosystem of affiliated packages. This paper describes the first official stable release (version 1.0) of the core package, as well as the project organization and infrastructure. This paper concludes with a discussion of the future of the SunPy project."
 
 # Summary. An optional shortened abstract.
 summary: ""
 
 tags: []
 categories: []
-featured: false
+featured: False
 
 # Custom links (optional).
 #   Uncomment and edit lines below to show custom links.
@@ -37,14 +37,13 @@ featured: false
 #   url: https://twitter.com
 #   icon_pack: fab
 #   icon: twitter
-
 links:
 - name: scholar
-  url: https://scholar.google.com/scholar?cluster=9776966565992851020
+  url: https://scholar.google.com/scholar?cluster=15691778759789080255
   icon_pack: ai
   icon: google-scholar
 
-url_pdf: https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=5453007
+url_pdf: https://iopscience.iop.org/article/10.3847/1538-4357/ab4f7a/pdf
 url_code:
 url_dataset:
 url_poster:
@@ -66,7 +65,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: [solartomography]
+projects: [sunpy]
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.

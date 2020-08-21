@@ -1,8 +1,8 @@
 ---
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
-title: "Sweeping Preconditioners"
-summary: "3D, high-frequency Helmholtz"
+title: "High-frequency Helmholtz"
+summary: "3D sweeping pre-conditioners, parallelism, and more"
 authors: [Leonardo Zepeda-Nunez, Matthias Taus, Adrien Scheuer, rjh, Laurent Demanet]
 tags: []
 categories: []

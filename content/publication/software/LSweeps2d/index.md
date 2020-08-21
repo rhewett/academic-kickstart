@@ -3,25 +3,27 @@
 
 math: true
 
-title: "High-dimensional wave atoms and compression of seismic data sets"
-authors: [Matti Leinonen, rjh, Laurent Demanet, Xiangxiong Zhang, Lexing Ying]
-date: 2013-08-13
-doi: "10.1190/segam2013-1328.1"
+title: "L-Sweeps 2D: Scalable Parallel Helmholtz Solver"
+authors: [Matthias Taus, Leonardo Zepeda-Núñez, rjh, Laurent Demanet]
+date: 2019-09-02
+doi: "10.5281/zenodo.3383882"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: 2019-05-31T14:53:55-04:00
+publishDate: 2020-08-01T00:00:00-04:00
 
 # Publication type.
 # Legend: 0 = Uncategorized; 1 = Conference paper; 2 = Journal article;
 # 3 = Preprint / Working Paper; 4 = Report; 5 = Book; 6 = Book section;
-# 7 = Thesis; 8 = Patent
-publication_types: ["1"]
+# 7 = Thesis; 8 = Patent; 9 = ; 10 = Software/data
+publication_types: ["10"]
 
 # Publication name and optional abbreviated publication name.
-publication: "SEG Technical Program Expanded Abstracts 2013"
-publication_short: "SEG 2013"
+publication: "MIT License"
+publication_short: ""
 
-abstract: "Wave atoms are a low-redundancy alternative to curvelets, suitable for high-dimensional seismic data processing. This abstract extends the wave atom orthobasis construction to 3D, 4D, and 5D Cartesian arrays, and parallelizes it in a sharedmemory environment. An implementation of the algorithm for NVIDIA CUDA capable graphics processing units (GPU) is also developed to accelerate computation for 2D and 3D data. The new transforms are benchmarked against the Fourier transform for compression of data generated from synthetic 2D and 3D acoustic models."
+abstract: "Public release of code for the 2D experiments in the L-Sweeps paper.
+
+The authors thank Total E&P Research and Technology USA for permission to release this code publicly."
 
 # Summary. An optional shortened abstract.
 summary: ""
@@ -39,13 +41,15 @@ featured: false
 #   icon: twitter
 
 links:
-- name: scholar
-  url: https://scholar.google.com/scholar?cluster=12200237855968086375
-  icon_pack: ai
-  icon: google-scholar
+#- name: scholar
+#  url: https://scholar.google.com/scholar?cluster=14998193184793614207
+#  icon_pack: ai
+#  icon: google-scholar
+#- name: MIT DSpace
+#  url: https://dspace.mit.edu/handle/1721.1/90528
 
-url_pdf: https://library.seg.org/doi/pdf/10.1190/segam2013-1328.1?download=true
-url_code:
+#url_pdf: https://dspace.mit.edu/bitstream/handle/1721.1/90528/Willemsen_etal_Efficient%20Stochastic_Hessian.pdf?sequence=1&isAllowed=y
+url_code: https://github.com/L-Sweeps/L-Sweeps-2D
 url_dataset:
 url_poster:
 url_project:
@@ -54,7 +58,7 @@ url_source:
 url_video:
 
 # Featured image
-# To use, add an image named `featured.jpg/png` to your page's folder. 
+# To use, add an image named `featured.jpg/png` to your page's folder.
 # Focal points: Smart, Center, TopLeft, Top, TopRight, Left, Right, BottomLeft, Bottom, BottomRight.
 image:
   caption: ""
@@ -66,7 +70,7 @@ image:
 #   Simply enter your project's folder or file name without extension.
 #   E.g. `internal-project` references `content/project/internal-project/index.md`.
 #   Otherwise, set `projects: []`.
-projects: [pysit]
+projects: [helmholtz]
 
 # Slides (optional).
 #   Associate this publication with Markdown slides.
