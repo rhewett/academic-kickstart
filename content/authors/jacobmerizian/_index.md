@@ -16,14 +16,16 @@ group_role_weight: 3
 
 # Organizations/Affiliations
 organizations:
-- name: ""
-  url: ""
+- name: "personal homepage"
+  url: "https://jacob.merizian.com/"
 
 # Short bio (displayed in user profile at end of posts)
 bio: ""
 
 interests:
-#- ""
+  - parallel programming for HPC
+  - computer vision
+  - neuroscience
 
 education:
   courses:
@@ -45,12 +47,12 @@ social:
 #- icon: google-scholar
 #  icon_pack: ai
 #  link: https://scholar.google.com/citations?user=PadviY8AAAAJ&hl=en
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/rhewett
-#- icon: linkedin
-#  icon_pack: fab
-#  link: https://www.linkedin.com/in/rjh-123
+- icon: github
+  icon_pack: fab
+  link: https://github.com/jmerizia/
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/jmerizia/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 #- icon: cv
@@ -69,3 +71,4 @@ avatar_bg_color: lavender
 
 ---
 
+Jacob is a 5th year student at Virginia Tech studying Mathematics and Computer Science, where he works on algorithms for HPC systems, cybersecurity, and brain-computer-interfaces. He is currently working on his startup, QuickTech Medical.
