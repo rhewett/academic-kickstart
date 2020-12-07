@@ -2,7 +2,7 @@
 # Documentation: https://sourcethemes.com/academic/docs/managing-content/
 
 title: "Tea Box with Mountain Scene"
-subtitle: "A Tea Box in Cherry, Walnut, and White Elm"
+subtitle: "A Tea Box in Cherry, Walnut, and White Ash"
 summary: ""
 authors: [rjh]
 
