@@ -25,6 +25,8 @@ sidebar:
     url: "research/#hero"
   - name: "Featured Publications"
     url: "research/#featured_publications"
+  - name: "Research Group"
+    url: "research/#research_group"
   - name: "All Publications"
     url: "/publication"
   - name: "Projects"
