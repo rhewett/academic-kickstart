@@ -25,6 +25,8 @@ sidebar:
       url: '#bio'
     - name: National Park Visits
       url: '#parksmap'
+    - name: Sunday Dinner Journey
+      url: '#foodmap'
     - name: Recent Photos
       url: '#featured_photos'
     - name: Recent Posts
