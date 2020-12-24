@@ -22,6 +22,10 @@ name = "National Park Visits"
 url = "#parksmap"
 
 [[sidebar.links]]
+name = "Sunday Dinner Journey"
+url = "#foodmap"
+
+[[sidebar.links]]
 name = "Recent Photos"
 url = "#featured_photos"
 
