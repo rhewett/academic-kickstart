@@ -79,4 +79,6 @@ Also, before I found the actual Msys2 installer, I had installed the (Git for Wi
 
 6. To install MPI, follow the directions here: https://www.math.ucla.edu/~wotaoyin/windows_coding.html
 
+   Edit Jan 21, 2021: Unfortunately, that page doesn't exist anymore.  It is available through the wayback machine: https://web.archive.org/web/20190403075443/http://math.ucla.edu/~wotaoyin/windows_coding.html
+
 7. Install winpty (`pacman -S winpty`) to fix color and tab completion in ipython (https://bugs.python.org/issue34091)
