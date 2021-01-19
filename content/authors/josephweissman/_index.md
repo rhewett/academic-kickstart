@@ -1,10 +1,10 @@
 ---
 # Display name
-name: ThaoVy Nguyen
+name: Joe Weissman
 
 # Username (this should match the folder name)
 authors:
-- thaovynguyen
+- josephweissman
 
 # Is this the primary user of the site?
 superuser: false
@@ -23,18 +23,18 @@ organizations:
 bio: ""
 
 interests:
-- Deep learning
-- Computational Science
-- Geosciences
+- Gaussian Processes
+- Preconditioning
+- Deep Reinforcement Learning
 
 education:
   courses:
   - course: MS in Mathematics
     institution: Virginia Tech
     year: 2021 (anticipated)
-  - course: BS in Mathematics
+  - course: BS in Mathematics, Physics, and CMDA
     institution: Virginia Tech
-    year: 2019
+    year: 2018 
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -47,12 +47,12 @@ social:
 #- icon: google-scholar
 #  icon_pack: ai
 #  link: https://scholar.google.com/citations?user=PadviY8AAAAJ&hl=en
-#- icon: github
-#  icon_pack: fab
-#  link: https://github.com/rhewett
+- icon: github
+  icon_pack: fab
+  link: https://github.com/wjoseph7
 - icon: linkedin
   icon_pack: fab
-  link: https://www.linkedin.com/in/thaovy-nguyen-956467125/
+  link: https://www.linkedin.com/in/joseph-weissman-b78a60142/
 # Link to a PDF of your resume/CV from the About widget.
 # To enable, copy your resume/CV to `static/files/cv.pdf` and uncomment the lines below.  
 #- icon: cv
@@ -60,7 +60,7 @@ social:
 #  link: files/cv.pdf
 
 # Enter email to display Gravatar (if Gravatar enabled in Config)
-email: "thaovy14@vt.edu"
+email: "wjoseph7@vt.edu"
 
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
@@ -71,7 +71,7 @@ avatar_bg_color: cornsilk
 
 ---
 
-I am a Masters student for the Department of Mathematics at Virginia Tech. My
-research interests are in modeling geosciences with deep learning and
-scientific computing. I completed my Undergraduate degree at Virginia Tech in
-Mathematics with a minor in Computer Science.
+I am working on a Master's Thesis which investigates combining structured
+kernel interpolation and multigrid in order to scale Gaussian processes to
+handle big data. Other research interests include deep reinforcement learning
+and time series forecasting.

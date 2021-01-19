@@ -31,10 +31,10 @@ education:
   courses:
   - course: BS in Computer Science
     institution: Virginia Tech
-    year: 2021
+    year: 2020
   - course: BS in Mathematics
     institution: Virginia Tech
-    year: 2021
+    year: 2020
 
 # Social/Academic Networking
 # For available icons, see: https://sourcethemes.com/academic/docs/widgets/#icons
@@ -65,7 +65,7 @@ email: "jmerizia@vt.edu"
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- "group members"
+- "group alumni"
 
 avatar_bg_color: lavender
 
