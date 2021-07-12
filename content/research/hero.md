@@ -42,8 +42,8 @@ title = "Joining My Research Group"
 
 *Pay attention to this space for research opportunities.  I will post them here as they arise.*
 
-**Postdocs:** I have no current openings.  Occasional funding for teaching postdocs may be available through the department.  Contact me if interested.
+**Postdocs:** I may have openings for postdocs in 2021. Occasional funding for teaching postdocs may be available through the department.  Contact me if interested.
 
-**Grad students:** Current VT MS and PhD students who are interested in working with me should contact me by e-mail to setup a meeting with me.  Prospective graduate students should also contact me to alert me to their application to VT.
+**Grad students:** I *currently* have openings for MS and PhD students in the space of HPC for deep learning.  Current VT MS and PhD students who are interested in working with me should contact me by e-mail to setup a meeting with me.  Prospective graduate students should also contact me to alert me to their application to VT.
 
 **Undergrads:** I occasionally have space for undergrad researchers.  I encourage CMDA students who want to do research with me to do well in CMDA 3634, with me (preferred) or with another instructor.

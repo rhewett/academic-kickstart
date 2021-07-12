@@ -74,8 +74,10 @@ user_groups:
 
 ---
 
-I am Assistant Professor of Mathematics and affiliate faculty in Computational Modeling and Data Analytics (CMDA) at Virginia Tech.  My research interests are in inverse problems at extreme scale, with focus at the intersection of physically constrained inverse problems, deep learning, and high-performance computing.  More broadly, I am also interested computational science & engineering, optimization, and numerical computing.  I am available for consulting.
+I am Assistant Professor of Mathematics and affiliate faculty in Computational Modeling and Data Analytics (CMDA) at Virginia Tech.  My research interests are in inverse problems at extreme scale, with focus at the intersection of physically constrained inverse problems, deep learning, and high-performance computing.  More broadly, I am also interested computational science & engineering, optimization, and numerical computing.  I am a recipient of an Early Career Research Program award from the Department of Energy's Office of Science.
 
 Prior to joining Virginia Tech, I was a research scientist and project manager in computational geoscience, machine learning, high-performance computing, and numerical methods in Houston, TX.  Before that, I was a postdoctoral associate at the Massachusetts Institute of Technology, where I was a member of the Imaging and Computing Group in the department of mathematics.
 
-Outside of research and teaching, my primary focus is spending time with my family, woodworking, hiking, cycling, golf, and panoramic photography.  I have visted a large number of National Parks, National Monuments, etc.
+Outside of research and teaching, my primary focus is spending time with my family, woodworking, hiking, cycling, eating, golf, and panoramic photography.  I have visted a large number of National Parks, National Monuments, etc.
+
+I am available for consulting.
