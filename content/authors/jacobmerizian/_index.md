@@ -11,7 +11,7 @@ superuser: false
 
 # Role/position
 role: undergraduate student
-group_role: undergraduate student
+group_role: Entrepeneur @ QuickTech Medical
 group_role_weight: 3
 
 # Organizations/Affiliations
@@ -71,4 +71,4 @@ avatar_bg_color: lavender
 
 ---
 
-Jacob is a 5th year student at Virginia Tech studying Mathematics and Computer Science, where he works on algorithms for HPC systems, cybersecurity, and brain-computer-interfaces. He is currently working on his startup, QuickTech Medical.
+Jacob completed undergraduate studies in Mathematics and Computer Science at Virginia Tech in 2020.  His interests are algorithms for HPC systems, cybersecurity, and brain-computer-interfaces. He is currently working on his startup, QuickTech Medical.

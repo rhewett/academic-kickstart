@@ -11,7 +11,7 @@ superuser: false
 
 # Role/position
 role: undergraduate student
-group_role: undergraduate student
+group_role: PhD Student @ Georgia Tech
 group_role_weight: 3
 
 # Organizations/Affiliations
@@ -76,4 +76,4 @@ Mathematics and Computational Modeling and Data Analytics where he worked on
 multiple research projects involving large linear systems, machine learning,
 and physical simulation. He hopes to use this experience to continue pursuing
 new and exciting research problems in computational science and engineering.
-He is currently working at his startup, QuickTech Medical.
+He is currently a PhD student at Georgia Tech.

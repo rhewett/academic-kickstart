@@ -11,7 +11,7 @@ superuser: false
 
 # Role/position
 role: graduate student
-group_role: graduate student
+group_role: Data Scientist @ L3-Harris
 group_role_weight: 2
 
 # Organizations/Affiliations
@@ -31,7 +31,7 @@ education:
   courses:
   - course: MS in Mathematics
     institution: Virginia Tech
-    year: 2021 (anticipated)
+    year: 2021
   - course: BS in Mathematics
     institution: Virginia Tech
     year: 2019
@@ -65,13 +65,14 @@ email: "thaovy14@vt.edu"
 # Organizational groups that you belong to (for People widget)
 #   Set this to `[]` or comment out if you are not using People widget.  
 user_groups:
-- "group members"
+- "group alumni"
 
 avatar_bg_color: cornsilk
 
 ---
 
-I am a Masters student for the Department of Mathematics at Virginia Tech. My
-research interests are in modeling geosciences with deep learning and
-scientific computing. I completed my Undergraduate degree at Virginia Tech in
-Mathematics with a minor in Computer Science.
+I completed my Masters degree in Department of Mathematics at Virginia Tech in
+2021. My research interests are in modeling geosciences with deep learning
+and scientific computing. I completed my Undergraduate degree at Virginia
+Tech in Mathematics with a minor in Computer Science.  I am currently a
+data scientist at L3-Harris.
