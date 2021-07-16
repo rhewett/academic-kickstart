@@ -25,10 +25,10 @@ photo:
   # sources: "smugmug"
   source: "smugmug"
   base_url: "https://photo.rjh.io"
-  gallery: "Projects/Cedar-Toy-Chest/"
-  image_key: "i-3dtV8x7"
+  gallery: "Projects/ChangingToyTable/"
+  image_key: "i-5GshjMw"
   version: "100"
-  image_base: "PXL_20201110_005624271"
+  image_base: "img"
   preview_size: "M"
   meta:
     location: ""
